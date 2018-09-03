@@ -8,8 +8,13 @@ import { PortfolioComponent } from "./components/portfolio/portfolio.component";
 import { ContactComponent } from "./components/contact/contact.component";
 
 const routes: Routes = [
+  {  
+    path: "", 
+    redirectTo: "home", 
+    pathMatch: "full" 
+  },
   {
-    path: "",
+    path: "home",
     component: HomeComponent
   },
   {
