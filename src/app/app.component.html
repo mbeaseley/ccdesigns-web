@@ -1,1 +1,44 @@
-<router-outlet></router-outlet>
+<div class="page justify-content-center">
+
+  <!-- header -->
+  <header class="page-header">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a class="navbar-brand">
+        <img src="../assets/favicon.ico" height="40" alt="CCDesigns">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="collapsingNavbar3">
+        <ul class="navbar-nav mx-auto w-100">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="portfolio" routerLinkActive="active">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact" routerLinkActive="active">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- /.header -->
+
+  <!-- page body -->
+  <div class="page-body">
+    <!-- page body contents -->
+    <router-outlet></router-outlet>
+    <!-- /.page body contents -->
+  </div>
+  <!-- /.page body -->
+
+  <!-- footer container -->
+  <footer class="page__footer">
+    <div class="page__footer__copyright">
+      © 2018 Copyright: Michael Beaseley
+    </div>
+  </footer>
+  <!-- /.footer container -->
+</div>
