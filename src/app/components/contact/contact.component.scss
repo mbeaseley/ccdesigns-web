@@ -1,3 +1,5 @@
+@import "~global/variables";
+
 .page {
   &__contact {
     display: -webkit-flex;
@@ -15,7 +17,7 @@
       min-width: 387px;
       overflow-x: scroll;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $screen-xs-max) {
         margin-top: 0;
       }
 
@@ -24,73 +26,27 @@
         margin-left: 100px;
         margin-right: 40px;
 
-        @media (max-width: 992px) {
+        @media (max-width: $screen-sm-max) {
           margin-left: 20px;
         }
 
         &__container {
           margin-bottom: 1rem;
           text-align: left;
-
-          &--heading {
-            font-weight: bolder;
-
-            h1,
-            h2 {
-              font-size: 79px;
-              line-height: 0.9em;
-              font-weight: bolder;
-              margin: 0;
-            }
-
-            h1 {
-              color: rgb(66, 66, 66);
-            }
-
-            h2 {
-              color: white;
-            }
-
-            hr {
-              border-top: 1px solid #b4b4b4;
-              margin-right: 10px;
-            }
-          }
-
-          &--body {
-            hr {
-              border-top: 1px solid #b4b4b4;
-              margin-right: 10px;
-            }
-          }
-
-          @media (max-width: 1200px) {
-            h1,
-            h2 {
-              font-size: 68px;
-            }
-          }
-
-          @media (max-width: 992px) {
-            h1,
-            h2 {
-              font-size: 60px;
-            }
-          }
         }
       }
     }
     &--right {
-      background-color: #b4b4b4;
+      background-color: $grey1;
       height: 97vh;
       flex: 2 2 50vw;
       order: 2;
       min-width: 387px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $screen-xs-max) {
       position: relative;
-      top: 65px;
+      top: 62px;
       -webkit-flex-direction: column;
       flex-direction: column;
       height: 95vh;

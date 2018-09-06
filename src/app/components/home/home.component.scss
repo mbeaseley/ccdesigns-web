@@ -1,3 +1,5 @@
+@import "~global/variables";
+
 .page {
   &__home {
     display: -webkit-flex;
@@ -15,7 +17,7 @@
       min-width: 387px;
       overflow-x: scroll;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $screen-xs-max) {
         margin-top: 0;
       }
 
@@ -24,7 +26,7 @@
         margin-left: 100px;
         margin-right: 40px;
 
-        @media (max-width: 992px) {
+        @media (max-width: $screen-sm-max ) {
           margin-left: 20px;
         }
 
@@ -44,53 +46,66 @@
             }
 
             h1 {
-              color: rgb(66, 66, 66);
+              color: $grey2;
             }
 
             h2 {
-              color: white;
+              color: $white;
             }
 
             hr {
-              border-top: 1px solid #b4b4b4;
+              border-top: 1px solid $grey1;
               margin-right: 10px;
+            }
+
+            @media (max-width: $creen-md-max) {
+              h1,
+              h2 {
+                font-size: 68px;
+              }
+            }
+  
+            @media (max-width: $screen-sm-max) {
+              h1,
+              h2 {
+                font-size: 60px;
+              }
+            }
+
+            @media (max-width: $screen-xs-min) {
+              h1,
+              h2 {
+                font-size: 50px;
+              }
             }
           }
 
           &--body {
             hr {
-              border-top: 1px solid #b4b4b4;
+              border-top: 1px solid $grey1;
               margin-right: 10px;
             }
-          }
 
-          @media (max-width: 1200px) {
-            h1,
-            h2 {
-              font-size: 68px;
-            }
-          }
-
-          @media (max-width: 992px) {
-            h1,
-            h2 {
-              font-size: 60px;
+            @media (max-width: $screen-xs-min) {
+              p {
+                font-size: 14px;
+              }
             }
           }
         }
       }
     }
     &--right {
-      background-color: #b4b4b4;
+      background-color: $grey1;
       height: 97vh;
       flex: 2 2 50vw;
       order: 2;
       min-width: 387px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $screen-xs-max) {
       position: relative;
-      top: 65px;
+      top: 52px;
       -webkit-flex-direction: column;
       flex-direction: column;
       height: 95vh;
@@ -104,7 +119,13 @@
         order: 1;
         min-height: 35vh;
         max-height: 35vh;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+      }
+    }
+
+    @media screen and (max-width: $screen-xs-min) {
+      &--left {
+        min-width: 357px;
       }
     }
   }

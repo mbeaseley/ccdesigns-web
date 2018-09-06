@@ -1,3 +1,5 @@
+@import "../global/variables";
+
 .page {
   overflow: hidden;
   //page sections below
@@ -8,39 +10,38 @@
     
     .navbar {
       position: relative;
-      padding: 0.5rem 1rem 0.75rem;
+      padding: 0.3rem 1rem 0.3rem;
       margin-left: 80px;
       box-shadow: none;
       cursor: pointer;
 
       .navbar-brand {
-        @media (max-width: 768px) {
+        @media screen and (max-width: $screen-xs-max) {
           position: relative;
           left: 47.5%;
           margin: 0;
         }
-        
       }
 
-      @media (max-width: 992px) {
+      @media screen and (max-width: $screen-sm-max) {
         margin-left: 0;
       }
 
       .nav-link {
-        color: #b4b4b4;
+        color: $grey1;
       }
 
       .nav-link:hover {
-        color: white;
+        color: $white;
       }
 
       .active {
-        color: #80e3ff;
+        color: $light-blue;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $screen-xs-max) {
         z-index: 1;
-        background-color: black;
+        background-color: $black;
         text-align: center;
       }
     }
@@ -74,24 +75,41 @@
         margin-bottom: 30px;
         position: relative;
 
+        @media screen and (max-width: $screen-xs-min) {
+          width: 60px;
+          height: 60px;
+        }
+
         &--outercircle {
-          background-color: rgba(55, 210, 253, 0.8);
+          background-color: $outer-circle;
         }
 
         &--innercircle {
           margin: 15%;
           height: 70%;
           width: 70%;
-          background-color: rgba(128, 227, 255, 1);
+          background-color: $inner-circle;
           display: flex;
           align-items: center;
           justify-content: center;
         }
+
+        .icon-sm {
+          font-size: 24px;
+        }
+
+        .icon-md {
+          font-size: 32px;
+        }
+
+        .icon-lg {
+          font-size: 48px;
+        }
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $screen-xs-max) {
         flex-direction: row;
-        top: 43%;
+        top: 40%;
 
         .circle {
           margin-bottom: 0;
@@ -102,8 +120,8 @@
         }
       }
 
-      @media screen and (max-height: 700px) {
-        top: 45%;
+      @media screen and (max-height: $screen-height) {
+        top: 44%;
       } 
 
     }
@@ -114,13 +132,13 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgb(37, 37, 37);
+    background-color: $grey3;
     padding: 0.5rem 0 0.5rem 0;
     min-width: 387px;
 
     &__copyright {
       text-align: center;
-      color: #b4b4b4;
+      color: $grey1;
       font-size: 12px;
     }
   }
