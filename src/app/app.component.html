@@ -1,10 +1,9 @@
 <div class="page justify-content-center">
-
   <!-- header -->
-  <header class="page-header">
+  <header class="page__header">
     <nav class="navbar navbar-expand-md navbar-dark">
       <a class="navbar-brand">
-        <img src="../assets/favicon.ico" height="40" alt="CCDesigns">
+        <img src="../assets/favicon.ico" height="30" alt="CCDesigns">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
         <span class="navbar-toggler-icon"></span>
@@ -27,10 +26,54 @@
   <!-- /.header -->
 
   <!-- page body -->
-  <div class="page-body">
+  <div class="page__body">
     <!-- page body contents -->
     <router-outlet></router-outlet>
     <!-- /.page body contents -->
+
+    <!-- social container -->
+    <div class="page__body--socialContainer">
+        <!-- linkedin  -->
+        <div class="circle circle--outercircle">
+          <div class="circle circle--innercircle">
+            <a class="btn-floating btn-small btn-li waves-light" href="https://www.linkedin.com/in/michael-beaseley-817b5a101" mdbRippleRadius>
+              <i class="fa fa-linkedin fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <!-- /.linkedin -->
+  
+        <!-- twitter -->
+        <div class="circle circle--outercircle">
+          <div class="circle circle--innercircle">
+            <a class="btn-floating btn-small btn-tw waves-light" href="https://twitter.com/MTBeaseley" mdbRippleRadius>
+              <i class="fa fa-twitter fa-3x" aria-hidden="true"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- /.twitter -->
+  
+        <!-- github -->
+        <div class="circle circle--outercircle">
+          <div class="circle circle--innercircle">
+            <a class="btn-floating btn-small btn-git waves-light" href="https://github.com/mbeaseley" mdbRippleRadius>
+              <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <!-- /. google plus -->
+  
+        <div class="circle circle--outercircle">
+          <div class="circle circle--innercircle">
+            <a class="btn-floating btn-small btn-gplus waves-light" href="mailto:m.t.beaseley@gmail.com" mdbRippleRadius>
+              <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+  
+      </div>
+      <!-- /.social container -->
+
   </div>
   <!-- /.page body -->
 

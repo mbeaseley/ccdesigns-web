@@ -1,3 +1,19 @@
-<p>
-  contact works!
-</p>
+<div class="page__contact">
+    <div class="page__contact--left">
+      <div class="contact-component">
+          <div class="contact-component__container">
+            <p>coming soon!</p>
+          </div>
+        </div>
+    </div>
+    <div class="page__contact--right">
+      <slideshow
+        [imageUrls]="imageUrls"
+        [minHeight]="'350px'"
+        [showArrows]="false"
+        [lazyLoad]="imageUrls?.length > 1"
+        [autoPlay]="true"
+        [autoPlayInterval]="7500">
+      </slideshow>
+    </div>
+  </div>
