@@ -71,12 +71,25 @@
                 font-size: 60px;
               }
             }
+
+            @media (max-width: $screen-xs-min) {
+              h1,
+              h2 {
+                font-size: 50px;
+              }
+            }
           }
 
           &--body {
             hr {
               border-top: 1px solid $grey1;
               margin-right: 10px;
+            }
+
+            @media (max-width: $screen-xs-min) {
+              p {
+                font-size: 14px;
+              }
             }
           }
         }
@@ -92,7 +105,7 @@
 
     @media screen and (max-width: $screen-xs-max) {
       position: relative;
-      top: 65px;
+      top: 52px;
       -webkit-flex-direction: column;
       flex-direction: column;
       height: 95vh;
@@ -107,6 +120,12 @@
         min-height: 35vh;
         max-height: 35vh;
         margin-bottom: 40px;
+      }
+    }
+
+    @media screen and (max-width: $screen-xs-min) {
+      &--left {
+        min-width: 357px;
       }
     }
   }
