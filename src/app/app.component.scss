@@ -1,3 +1,5 @@
+@import "../global/global";
+
 .page {
   overflow: hidden;
   //page sections below
@@ -14,32 +16,32 @@
       cursor: pointer;
 
       .navbar-brand {
-        @media (max-width: 768px) {
+        @media screen and (max-width: $screen-xs-max) {
           position: relative;
           left: 47.5%;
           margin: 0;
         }
       }
 
-      @media (max-width: 992px) {
+      @media screen and (max-width: $screen-sm-max) {
         margin-left: 0;
       }
 
       .nav-link {
-        color: #b4b4b4;
+        color: $grey1;
       }
 
       .nav-link:hover {
-        color: white;
+        color: $white;
       }
 
       .active {
-        color: #80e3ff;
+        color: $light-blue;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $screen-xs-max) {
         z-index: 1;
-        background-color: black;
+        background-color: $black;
         text-align: center;
       }
     }
@@ -74,21 +76,21 @@
         position: relative;
 
         &--outercircle {
-          background-color: rgba(55, 210, 253, 0.8);
+          background-color: $outer-circle;
         }
 
         &--innercircle {
           margin: 15%;
           height: 70%;
           width: 70%;
-          background-color: rgba(128, 227, 255, 1);
+          background-color: $inner-circle;
           display: flex;
           align-items: center;
           justify-content: center;
         }
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $screen-xs-max) {
         flex-direction: row;
         top: 42%;
 
@@ -101,7 +103,7 @@
         }
       }
 
-      @media screen and (max-height: 800px) {
+      @media screen and (max-height: $screen-height) {
         top: 44%;
       } 
 
@@ -113,13 +115,13 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgb(37, 37, 37);
+    background-color: $grey3;
     padding: 0.5rem 0 0.5rem 0;
     min-width: 387px;
 
     &__copyright {
       text-align: center;
-      color: #b4b4b4;
+      color: $grey1;
       font-size: 12px;
     }
   }
