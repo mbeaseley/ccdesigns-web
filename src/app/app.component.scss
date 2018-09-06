@@ -1,13 +1,45 @@
 .page {
   overflow: hidden;
   //page sections below
-  &--header {
-    position: fixed;
+  &__header {
     width: 100vw;
-    z-index: 1;
+    
+    .navbar {
+      position: relative;
+      padding: 0.5rem 1rem 0.75rem;
+      margin-left: 80px;
+      box-shadow: none;
+      cursor: pointer;
+
+      .navbar-brand {
+        position: relative;
+        left: 46.5%;
+        margin: 0;
+      }
+
+      @media (max-width: 992px) {
+        margin-left: 0;
+      }
+
+      .nav-link {
+        color: #b4b4b4;
+      }
+
+      .nav-link:hover {
+        color: white;
+      }
+
+      .active {
+        color: #80e3ff;
+      }
+
+      .navbar-nav {
+        text-align: center;
+      }
+    }
   }
 
-  .page-body {
+  &__body {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
