@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { SlideshowModule } from "ng-simple-slideshow";
 
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./components/home/home.component";
@@ -8,10 +9,10 @@ import { PortfolioComponent } from "./components/portfolio/portfolio.component";
 import { ContactComponent } from "./components/contact/contact.component";
 
 const routes: Routes = [
-  {  
-    path: "", 
-    redirectTo: "home", 
-    pathMatch: "full" 
+  {
+    path: "",
+    redirectTo: "home",
+    pathMatch: "full"
   },
   {
     path: "home",
@@ -38,7 +39,7 @@ const routes: Routes = [
     PortfolioComponent,
     ContactComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, RouterModule.forRoot(routes), SlideshowModule],
   providers: [],
   bootstrap: [AppComponent]
 })
