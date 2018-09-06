@@ -1,4 +1,4 @@
-@import "../../../global/global";
+@import "~global/variables";
 
 .page {
   &__home {
@@ -57,26 +57,26 @@
               border-top: 1px solid $grey1;
               margin-right: 10px;
             }
+
+            @media (max-width: $creen-md-max) {
+              h1,
+              h2 {
+                font-size: 68px;
+              }
+            }
+  
+            @media (max-width: $screen-sm-max) {
+              h1,
+              h2 {
+                font-size: 60px;
+              }
+            }
           }
 
           &--body {
             hr {
               border-top: 1px solid $grey1;
               margin-right: 10px;
-            }
-          }
-
-          @media (max-width: $creen-md-max) {
-            h1,
-            h2 {
-              font-size: 68px;
-            }
-          }
-
-          @media (max-width: $screen-sm-max) {
-            h1,
-            h2 {
-              font-size: 60px;
             }
           }
         }
