@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { ReactiveFormsModule } from "@angular/forms";
 import { SlideshowModule } from "ng-simple-slideshow";
 
 import { AppComponent } from "./app.component";
@@ -39,7 +40,7 @@ const routes: Routes = [
     PortfolioComponent,
     ContactComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes), SlideshowModule],
+  imports: [BrowserModule, RouterModule.forRoot(routes), SlideshowModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

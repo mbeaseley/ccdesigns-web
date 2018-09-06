@@ -24,15 +24,31 @@
       .contact-component {
         text-align: center;
         margin-left: 100px;
-        margin-right: 40px;
+        margin-right: 60px;
 
         @media (max-width: $screen-sm-max) {
           margin-left: 20px;
         }
 
+        @media (max-width: $screen-xs-max) {
+          margin: 0 60px;
+        }
+
+        @media (max-width: $screen-xs-min) {
+          margin: 0 20px;
+        }
+
         &__container {
           margin-bottom: 1rem;
           text-align: left;
+          text-align: center;
+
+          h1 {
+            font-size: 46px;
+            line-height: 0.9em;
+            font-weight: bolder;
+            color: $grey1;
+          }
         }
       }
     }
@@ -46,7 +62,7 @@
 
     @media screen and (max-width: $screen-xs-max) {
       position: relative;
-      top: 62px;
+      top: 52px;
       -webkit-flex-direction: column;
       flex-direction: column;
       height: 95vh;
@@ -60,7 +76,13 @@
         order: 1;
         min-height: 35vh;
         max-height: 35vh;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+      }
+    }
+
+    @media screen and (max-width: $screen-xs-min) {
+      &--left {
+        min-width: 320px;
       }
     }
   }

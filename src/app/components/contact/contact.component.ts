@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { SlideshowModule } from 'ng-simple-slideshow';
 
 @Component({
@@ -15,7 +16,32 @@ export class ContactComponent implements OnInit {
     {url: 'https://images.ctfassets.net/43i5e5k8e66i/pj0mHN9DtQUg4gOuqm8KE/77f738415e509ddcbca4786797a9bed9/profile_station.jpg'}
   ];
 
+  contactForm: FormGroup;
+  submitted = false;
+
+  constructor(private formBuilder: FormBuilder) { }
+
   ngOnInit() {
+      this.contactForm = this.formBuilder.group({
+          name: ['', Validators.required],
+          email: ['', [Validators.required, Validators.email]],
+          subject: ['', Validators.required],
+          message: ['', Validators.required]
+      });
+  }
+
+  // convenience getter for easy access to form fields
+  get f() { return this.contactForm.controls; }
+
+  onSubmit() {
+    this.submitted = true;
+
+    // stop here if form is invalid
+    if (this.contactForm.invalid) {
+        return;
+    }
+
+    alert('SUCCESS!!');
   }
 
 }
