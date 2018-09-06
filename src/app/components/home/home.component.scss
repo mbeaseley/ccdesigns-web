@@ -24,63 +24,65 @@
         margin-left: 100px;
         margin-right: 40px;
 
-        @media (max-width:992px) {
-            margin-left: 20px;
+        @media (max-width: 992px) {
+          margin-left: 20px;
         }
 
         &__container {
-            margin-bottom: 1rem;
-            text-align: left;
+          margin-bottom: 1rem;
+          text-align: left;
 
+          &--heading {
+            font-weight: bolder;
 
-            &--heading {
+            h1,
+            h2 {
+              font-size: 79px;
+              line-height: 0.9em;
               font-weight: bolder;
-
-              h1, h2 {
-                font-size: 79px;
-                line-height: 0.9em;
-                font-weight: bolder;
-                margin: 0;
-              }
-
-              h1 {
-                  color: rgb(66, 66, 66);
-              }
-
-              h2 {
-                  color: white;
-              }
-
-              hr {
-                border-top: 1px solid #b4b4b4;
-                margin-right: 10px;
-              }
+              margin: 0;
             }
 
-            &--body {
-              hr {
-                border-top: 1px solid #b4b4b4;
-                margin-right: 10px;
-              }
+            h1 {
+              color: rgb(66, 66, 66);
             }
 
-            @media (max-width: 1200px) {
-                h1, h2 {
-                    font-size: 68px;
-                }
+            h2 {
+              color: white;
             }
 
-            @media (max-width: 992px) {
-                h1, h2 {
-                    font-size: 60px;
-                }
+            hr {
+              border-top: 1px solid #b4b4b4;
+              margin-right: 10px;
             }
+          }
+
+          &--body {
+            hr {
+              border-top: 1px solid #b4b4b4;
+              margin-right: 10px;
+            }
+          }
+
+          @media (max-width: 1200px) {
+            h1,
+            h2 {
+              font-size: 68px;
+            }
+          }
+
+          @media (max-width: 992px) {
+            h1,
+            h2 {
+              font-size: 60px;
+            }
+          }
         }
       }
     }
     &--right {
       background-color: #b4b4b4;
-      height:97vh;
+      height: 97vh;
       flex: 2 2 50vw;
       order: 2;
       min-width: 387px;
@@ -94,15 +96,15 @@
       height: 95vh;
 
       &--left {
-          order: 2;
-          padding: 0 0 60px 0;
-          flex: 1 1 140vw;
+        order: 2;
+        padding: 0 0 60px 0;
+        flex: 1 1 140vw;
       }
       &--right {
-          order: 1;
-          min-height: 35vh;
-          max-height: 35vh;
-          margin-bottom: 50px;
+        order: 1;
+        min-height: 35vh;
+        max-height: 35vh;
+        margin-bottom: 50px;
       }
     }
   }
