@@ -2,7 +2,9 @@
   overflow: hidden;
   //page sections below
   &__header {
+    position: fixed;
     width: 100vw;
+    z-index: 1;
     
     .navbar {
       position: relative;
@@ -12,9 +14,12 @@
       cursor: pointer;
 
       .navbar-brand {
-        position: relative;
-        left: 46.5%;
-        margin: 0;
+        @media (max-width: 768px) {
+          position: relative;
+          left: 47.5%;
+          margin: 0;
+        }
+        
       }
 
       @media (max-width: 992px) {
@@ -36,6 +41,18 @@
       .navbar-nav {
         text-align: center;
       }
+
+      // @media screen and (max-width: 768px) {
+      //   position: absolute;
+      //   z-index: 1;
+      //   background-color: black;
+      //   text-align: center;
+  
+      //   .nav-link {
+      //     position: relative;
+      //     left: 8px;
+      //   }
+      // }
     }
   }
 
