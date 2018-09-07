@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
     this.meta.addTags([
       {name: 'description', content: 'Personal CV based Website'},
       {name: 'author', content: 'Michael Beaseleyt'},
-      {name: 'image', content: ''},
+      {name: 'image', content: 'https://images.ctfassets.net/43i5e5k8e66i/4H1rYzMHlYygico2icMSSQ/067d1fc831f04c96ab48e16583f0b979/web_portfolio.JPG'},
     ]);
   }
 
