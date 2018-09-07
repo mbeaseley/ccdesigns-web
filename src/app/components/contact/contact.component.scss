@@ -24,28 +24,19 @@
       .contact-component {
         text-align: center;
         margin-left: 100px;
-        margin-right: 60px;
+        margin-right: 40px;
 
         @media (max-width: $screen-sm-max) {
           margin-left: 20px;
         }
 
-        @media (max-width: $screen-xs-max) {
-          margin: 0 60px;
-        }
-
-        @media (max-width: $screen-xs-min) {
-          margin: 0 20px;
-        }
-
         &__container {
-          margin-bottom: 1rem;
+          margin-bottom: 16px;
           text-align: left;
-          text-align: center;
 
           h1 {
             font-size: 46px;
-            line-height: 0.9em;
+            line-height: 14.4px;
             font-weight: bolder;
             color: $grey1;
           }
