@@ -1,39 +1,10 @@
 <div class="page__contact">
     <div class="page__contact--left">
       <div class="contact-component">
-          <div class="contact-component__container">
-            <h1>CONTACT ME</h1>
-            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-              <div class="form-group">
-                <input type="text" placeholder="Name" formControlName="name" class="form-control bg-dark text-white" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
-                <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
-                  <div *ngIf="f.name.errors.required">First Name is required</div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" placeholder="Email" formControlName="email" class="form-control bg-dark text-white" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
-                />
-                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                  <div *ngIf="f.email.errors.required">Email is required</div>
-                  <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" placeholder="Subject" formControlName="subject" class="form-control bg-dark text-white" [ngClass]="{ 'is-invalid': submitted && f.subject.errors }"
-                />
-                <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
-                  <div *ngIf="f.subject.errors.required">Subject is required</div>
-                </div>
-              </div>
-              <div class="form-group">
-                <textarea placeholder="Message" Name="message" rows="5" class="form-control bg-dark text-white"></textarea>
-              </div>
-              <div class="form-group">
-                <button class="btn btn-primary btn-block">Submit</button>
-              </div>
-            </form>
-          </div>
+        <div class="contact-component__container">
+          <p>Contact Form coming soon!</p>
         </div>
+      </div>
     </div>
     <div class="page__contact--right">
       <slideshow
