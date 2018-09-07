@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: "app-root",
@@ -6,10 +7,14 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent implements OnInit {
-  private width: any;
   
-  ngOnInit() {
-    this.width = window.innerWidth;
-    console.log(window.innerWidth);
+  constructor(private meta: Meta) {
+    this.meta.addTags([
+      {name: 'description', content: 'Personal CV based Website'},
+      {name: 'author', content: 'Michael Beaseleyt'},
+      {name: 'image', content: ''},
+    ]);
   }
+
+  ngOnInit() {}
 }

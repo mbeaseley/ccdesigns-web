@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { ReactiveFormsModule } from "@angular/forms";
 import { SlideshowModule } from "ng-simple-slideshow";
 
 import { AppComponent } from "./app.component";
@@ -11,11 +12,6 @@ import { ContactComponent } from "./components/contact/contact.component";
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "home",
-    pathMatch: "full"
-  },
-  {
-    path: "home",
     component: HomeComponent
   },
   {
@@ -28,7 +24,7 @@ const routes: Routes = [
   },
   {
     path: "**",
-    redirectTo: "home"
+    redirectTo: ""
   }
 ];
 
@@ -39,7 +35,7 @@ const routes: Routes = [
     PortfolioComponent,
     ContactComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes), SlideshowModule],
+  imports: [BrowserModule, RouterModule.forRoot(routes), SlideshowModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -31,8 +31,15 @@
         }
 
         &__container {
-          margin-bottom: 1rem;
+          margin-bottom: 16px;
           text-align: left;
+
+          h1 {
+            font-size: 46px;
+            line-height: 0.9em;
+            font-weight: bolder;
+            color: $grey1;
+          }
         }
       }
     }
@@ -46,7 +53,7 @@
 
     @media screen and (max-width: $screen-xs-max) {
       position: relative;
-      top: 62px;
+      top: 52px;
       -webkit-flex-direction: column;
       flex-direction: column;
       height: 95vh;
@@ -60,7 +67,13 @@
         order: 1;
         min-height: 35vh;
         max-height: 35vh;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+      }
+    }
+
+    @media screen and (max-width: $screen-xs-min) {
+      &--left {
+        min-width: 320px;
       }
     }
   }

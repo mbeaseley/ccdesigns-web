@@ -10,7 +10,7 @@
     
     .navbar {
       position: relative;
-      padding: 0.3rem 1rem 0.3rem;
+      padding: 4.8px 16px 4.8px 16px;
       margin-left: 80px;
       box-shadow: none;
       cursor: pointer;
@@ -101,10 +101,6 @@
         .icon-md {
           font-size: 32px;
         }
-
-        .icon-lg {
-          font-size: 48px;
-        }
       }
 
       @media screen and (max-width: $screen-xs-max) {
@@ -133,7 +129,7 @@
     left: 0;
     right: 0;
     background-color: $grey3;
-    padding: 0.5rem 0 0.5rem 0;
+    padding: 8px 0 8px 0;
     min-width: 387px;
 
     &__copyright {
