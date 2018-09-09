@@ -78,6 +78,13 @@
                 font-size: 50px;
               }
             }
+
+            @media (max-height: $screen-height-xs) {
+              h1,
+              h2 {
+                font-size: 40px;
+              }
+            }
           }
 
           &--body {
@@ -126,6 +133,12 @@
     @media screen and (max-width: $screen-xs-min) {
       &--left {
         min-width: 357px;
+      }
+    }
+
+    @media (max-height: $screen-height-xs) {
+      &--right {
+        margin-bottom: 30px;
       }
     }
   }
