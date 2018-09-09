@@ -2,11 +2,15 @@
 
 .page {
   overflow: hidden;
-  
+
   &__header {
     position: fixed;
     width: 100vw;
     z-index: 1;
+
+    @media screen and (max-width: $screen-xs-max) {
+      background-color: $black;
+    }
     
     .navbar {
       position: relative;
@@ -15,16 +19,19 @@
       box-shadow: none;
       cursor: pointer;
 
-      .navbar-brand {
-        @media screen and (max-width: $screen-xs-max) {
+      @media screen and (max-width: $screen-sm-max) {
+        margin-left: 0;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        z-index: 1;
+        text-align: center;
+
+        .navbar-brand {
           position: relative;
           left: 47.5%;
           margin: 0;
         }
-      }
-
-      @media screen and (max-width: $screen-sm-max) {
-        margin-left: 0;
       }
 
       .nav-link {
@@ -37,12 +44,6 @@
 
       .active {
         color: $light-blue;
-      }
-
-      @media screen and (max-width: $screen-xs-max) {
-        z-index: 1;
-        background-color: $black;
-        text-align: center;
       }
     }
   }
@@ -116,8 +117,12 @@
         }
       }
 
-      @media screen and (max-height: 820px) {
+      @media screen and (max-height: $screen-height-md) {
         top: 42vh;
+      }
+
+      @media screen and (max-height: $screen-height-sm) {
+        top: 44vh;
       }
 
     }
