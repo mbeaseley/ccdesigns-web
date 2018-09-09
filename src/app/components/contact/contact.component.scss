@@ -40,6 +40,11 @@
             font-weight: bolder;
             color: $grey1;
           }
+          
+          hr {
+            border-top: 1px solid $grey1;
+            margin-right: 10px;
+          }
         }
       }
     }
