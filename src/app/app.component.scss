@@ -14,7 +14,7 @@
     
     .navbar {
       position: relative;
-      padding: 4.8px 4px 4.8px 16px;
+      padding: 4.8px 4px 4.8px 4px;
       margin-left: 80px;
       box-shadow: none;
       cursor: pointer;
@@ -26,6 +26,10 @@
       @media screen and (max-width: $screen-xs-max) {
         z-index: 1;
         text-align: center;
+
+        img {
+          margin-left: 12px;
+        }
       }
 
       .nav-link {
