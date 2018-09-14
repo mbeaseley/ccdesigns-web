@@ -2,7 +2,15 @@
   <div class="page__portfolio--left">
     <div class="portfolio-component">
         <div class="portfolio-component__container">
-          <p>Portfolio page coming soon!</p>
+          <h1>PORTFOLIO</h1>
+          <div class="portfolio-component__container--capsule">
+            <div class="image-button" *ngFor="let portImages of portfolioImages">
+              <img [src]="portImages.url" [alt]="portImages.alt" />
+              <span class="image-button__text">{{portImages.name}}</span>
+            </div>
+            <div class="">
+            </div>
+          </div>
         </div>
       </div>
   </div>
