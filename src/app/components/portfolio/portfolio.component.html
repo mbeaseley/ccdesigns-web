@@ -5,8 +5,10 @@
           <h1>PORTFOLIO</h1>
           <div class="portfolio-component__container--capsule">
             <div class="image-button" *ngFor="let portImages of portfolioImages">
-              <img [src]="portImages.url" [alt]="portImages.alt" />
-              <span class="image-button__text">{{portImages.name}}</span>
+              <a [routerLink]="portImages.link">
+                <img [src]="portImages.url" [alt]="portImages.alt" />
+                <span class="image-button__text">{{portImages.name}}</span>
+              </a>
             </div>
             <div class="">
             </div>
