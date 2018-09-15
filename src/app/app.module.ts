@@ -8,6 +8,8 @@ import { AppComponent } from "./app.component";
 import { HomeComponent } from "./components/home/home.component";
 import { PortfolioComponent } from "./components/portfolio/portfolio.component";
 import { ContactComponent } from "./components/contact/contact.component";
+import { FypProjectComponent } from './components/portfolio/portfolio-projects/fyp-project/fyp-project.component';
+import { WebsiteProjectComponent } from './components/portfolio/portfolio-projects/website-project/website-project.component';
 
 const routes: Routes = [
   {
@@ -17,6 +19,14 @@ const routes: Routes = [
   {
     path: "portfolio",
     component: PortfolioComponent
+  },
+  {
+    path: "portfolio/fyp-project",
+    component: FypProjectComponent
+  },
+  {
+    path: "portfolio/website-project",
+    component: WebsiteProjectComponent
   },
   {
     path: "contact",
@@ -33,7 +43,9 @@ const routes: Routes = [
     AppComponent,
     HomeComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    FypProjectComponent,
+    WebsiteProjectComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes), SlideshowModule, ReactiveFormsModule],
   providers: [],

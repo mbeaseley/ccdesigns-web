@@ -1,12 +1,14 @@
-<div class="page__portfolio">
-  <div class="page__portfolio--left">
-    <div class="portfolio-component">
-        <div class="portfolio-component__container">
+<div class="page__component">
+  <div class="page__component--left">
+    <div class="component">
+        <div class="component__container">
           <h1>PORTFOLIO</h1>
-          <div class="portfolio-component__container--capsule">
+          <div class="component__container--capsule">
             <div class="image-button" *ngFor="let portImages of portfolioImages">
-              <img [src]="portImages.url" [alt]="portImages.alt" />
-              <span class="image-button__text">{{portImages.name}}</span>
+              <a [routerLink]="portImages.link">
+                <img [src]="portImages.url" [alt]="portImages.alt" />
+                <span class="image-button__text">{{portImages.name}}</span>
+              </a>
             </div>
             <div class="">
             </div>
@@ -14,7 +16,7 @@
         </div>
       </div>
   </div>
-  <div class="page__portfolio--right">
+  <div class="page__component--right">
     <slideshow
       [imageUrls]="imageUrls"
       [showArrows]="false"
