@@ -24,6 +24,11 @@
             "styles": [
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/global"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -72,8 +77,13 @@
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/global"
+              ]
+            },
             "assets": [
               "src/assets",
               "src/favicon.ico",

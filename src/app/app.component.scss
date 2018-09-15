@@ -1,4 +1,4 @@
-@import "../global/variables";
+@import "variables";
 
 .page {
   overflow: hidden;
@@ -9,7 +9,7 @@
     z-index: 1;
 
     @media screen and (max-width: $screen-xs-max) {
-      background-color: $black;
+      background-color: $cc-black;
     }
     
     .navbar {
@@ -33,15 +33,15 @@
       }
 
       .nav-link {
-        color: $grey1;
+        color: $cc-grey1;
       }
 
       .nav-link:hover {
-        color: $white;
+        color: $cc-white;
       }
 
       .active {
-        color: $light-blue;
+        color: $cc-light-blue;
       }
     }
   }
@@ -80,14 +80,14 @@
         }
 
         &--outercircle {
-          background-color: $outer-circle;
+          background-color: $cc-outer-circle;
         }
 
         &--innercircle {
           margin: 15%;
           height: 70%;
           width: 70%;
-          background-color: $inner-circle;
+          background-color: $cc-inner-circle;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -131,12 +131,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: $grey3;
+    background-color: $cc-grey3;
     padding: 8px 0 8px 0;
 
     &__copyright {
       text-align: center;
-      color: $grey1;
+      color: $cc-grey1;
       font-size: 12px;
     }
   }
