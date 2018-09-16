@@ -1,1 +1,22 @@
 @import "component";
+@import "separator";
+@import "typography";
+
+.page {
+  &__component {
+    .component__container {
+      h1 {
+        @extend %margin-bottom;
+      }
+      a {
+        color: $cc-light-blue;
+      }
+    }
+
+    @media screen and (max-width: $screen-xs-min) {
+      &--left {
+        min-width: 320px;
+      }
+    }
+  }
+}

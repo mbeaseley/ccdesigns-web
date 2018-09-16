@@ -1,14 +1,18 @@
 import { Component, OnInit } from "@angular/core";
 import { Meta } from '@angular/platform-browser';
+import { AppGlobals } from './app.global';
 
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"]
+  styleUrls: ["./app.component.scss"],
+  providers: [AppGlobals]
 })
 export class AppComponent implements OnInit {
-  
-  constructor(private meta: Meta) {
+
+
+
+  constructor(private meta: Meta, private global: AppGlobals) {
     this.meta.addTags([
       {name: 'description', content: 'Personal CV based Website'},
       {name: 'author', content: 'Michael Beaseley'},

@@ -5,24 +5,29 @@
       <a class="navbar-brand">
         <div>
           <img src="../assets/favicon.ico" height="30" width="30" alt="CCDesigns">
-      </div>
+        </div>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler navbar__back" routerLink="portfolio" [style.display]= "this.global.locationBoolean === true ? 'inline' : 'none'" type="button">
+        <i class="fas fa-chevron-left"></i>
       </button>
-      <div class="navbar-collapse collapse" id="collapsingNavbar3">
-        <ul class="navbar-nav mx-auto w-100">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="portfolio" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Contact</a>
-          </li>
-        </ul>
-      </div>
+      <div [style.display]= "this.global.locationBoolean === true ? 'none' : 'inline'">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbar3">
+          <ul class="navbar-nav mx-auto w-100">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="portfolio" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Contact</a>
+            </li>
+          </ul>
+        </div>
+     </div>
     </nav>
   </header>
   <!-- /.header -->

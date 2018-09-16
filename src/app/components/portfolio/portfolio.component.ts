@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { SlideshowModule } from "ng-simple-slideshow";
+import { AppGlobals } from '../../app.global';
 
 @Component({
   selector: "app-portfolio",
@@ -29,5 +29,9 @@ export class PortfolioComponent implements OnInit {
       link: "/portfolio/website-project"
     }
   ];
+
+  constructor(public global: AppGlobals) {
+    this.global.locationBoolean = false;
+  }
   ngOnInit() {}
 }

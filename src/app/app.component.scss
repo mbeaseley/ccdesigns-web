@@ -19,9 +19,18 @@
       box-shadow: none;
       cursor: pointer;
 
-      @media screen and (max-width: $screen-sm-max) {
-        margin-left: 0;
+      &__back {
+        position: absolute;
+        left: 41%;
+
+        @media screen and (max-width: $screen-xs-max) { 
+          position: relative;
+          margin-right: 10px;
+          left: 0;
+        }
       }
+
+      @media screen and (max-width: $screen-sm-max) { margin-left: 0; }
 
       @media screen and (max-width: $screen-xs-max) {
         z-index: 1;
@@ -115,13 +124,9 @@
         }
       }
 
-      @media screen and (max-height: $screen-height-md) {
-        top: 42vh;
-      }
+      @media screen and (max-height: $screen-height-md) { top: 42vh; }
 
-      @media screen and (max-height: $screen-height-sm) {
-        top: 44vh;
-      }
+      @media screen and (max-height: $screen-height-sm) { top: 44vh; }
 
     }
   }
