@@ -12,6 +12,10 @@
   margin-bottom: 20px;
 }
 
+%margin-bottom-5 {
+  margin-bottom: 5px;
+}
+
 h1,
 h2 {
   @extend %heading;
@@ -28,6 +32,14 @@ h2 {
 }
 
 p {
+  font-size: 16px;
+  color: $cc-white;
+
+  @media (max-width: $screen-xs-min) { font-size: 14px; }
+}
+
+li {
+  @extend %margin-bottom-5;
   font-size: 16px;
   color: $cc-white;
 
