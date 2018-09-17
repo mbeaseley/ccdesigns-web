@@ -10,9 +10,7 @@ import { AppGlobals } from './app.global';
 })
 export class AppComponent implements OnInit {
 
-
-
-  constructor(private meta: Meta, private global: AppGlobals) {
+  constructor(private meta: Meta, public global: AppGlobals) {
     this.meta.addTags([
       {name: 'description', content: 'Personal CV based Website'},
       {name: 'author', content: 'Michael Beaseley'},
