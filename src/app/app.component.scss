@@ -17,16 +17,30 @@
       padding: 4.8px 4px 4.8px 4px;
       margin-left: 80px;
       box-shadow: none;
-      cursor: pointer;
+
+      &--hidden {
+        display: none !important;
+      }
 
       &__back {
         position: absolute;
         left: 41%;
+        background: transparent;
+        color: $cc-grey-color;
+        border-color: $cc-grey-border;
+
+        .icon-size {
+          font-size: 20px;
+        }
 
         @media screen and (max-width: $screen-xs-max) { 
           position: relative;
           margin-right: 10px;
           left: 0;
+        }
+
+        .icon-size {
+          font-size: 24px;
         }
       }
 
