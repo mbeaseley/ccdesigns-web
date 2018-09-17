@@ -17,11 +17,34 @@
       padding: 4.8px 4px 4.8px 4px;
       margin-left: 80px;
       box-shadow: none;
-      cursor: pointer;
 
-      @media screen and (max-width: $screen-sm-max) {
-        margin-left: 0;
+      &--hidden {
+        display: none !important;
       }
+
+      &__back {
+        position: absolute;
+        left: 41%;
+        background: transparent;
+        color: $cc-grey-color;
+        border-color: $cc-grey-border;
+
+        .icon-size {
+          font-size: 20px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) { 
+          position: relative;
+          margin-right: 10px;
+          left: 0;
+        }
+
+        .icon-size {
+          font-size: 24px;
+        }
+      }
+
+      @media screen and (max-width: $screen-sm-max) { margin-left: 0; }
 
       @media screen and (max-width: $screen-xs-max) {
         z-index: 1;
@@ -115,13 +138,9 @@
         }
       }
 
-      @media screen and (max-height: $screen-height-md) {
-        top: 42vh;
-      }
+      @media screen and (max-height: $screen-height-md) { top: 42vh; }
 
-      @media screen and (max-height: $screen-height-sm) {
-        top: 44vh;
-      }
+      @media screen and (max-height: $screen-height-sm) { top: 44vh; }
 
     }
   }

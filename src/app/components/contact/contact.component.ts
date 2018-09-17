@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SlideshowModule } from 'ng-simple-slideshow';
+import { AppGlobals } from '../../app.global';
 
 @Component({
   selector: 'app-contact',
@@ -12,5 +12,8 @@ export class ContactComponent implements OnInit {
     {url: 'https://images.ctfassets.net/43i5e5k8e66i/pj0mHN9DtQUg4gOuqm8KE/c4b222cd1703b4f608d68fabc4ccef0a/profile_station.jpg'},
   ];
 
+  constructor(public global: AppGlobals) {
+    this.global.locationBoolean = false;
+  }
   ngOnInit() {}
 }
