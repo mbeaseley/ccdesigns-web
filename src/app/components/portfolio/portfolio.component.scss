@@ -24,15 +24,14 @@
               max-width: 230px;
 
               &__text {
-                position: absolute;
-                visibility: hidden;
-                display: flex;
-                align-content: center;
+                
+                width: inherit;
+                background-color: $cc-white;
+                color: $cc-black;
+                padding: 10px;
                 text-align: center;
-                color: $cc-white;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+
+                @media (max-width: $screen-xs-min) { font-size: 14px; }
               }
             }
 
