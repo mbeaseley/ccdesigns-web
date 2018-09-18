@@ -1,7 +1,3 @@
+@import "body";
+@import "bootstrap-sass";
 @import "typography";
-@import "~bootstrap/scss/bootstrap";
-
-body {
-  background-color: $cc-black;
-  color: $cc-white;
-}
