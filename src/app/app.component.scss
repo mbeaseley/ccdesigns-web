@@ -15,8 +15,8 @@
     
     .navbar {
       position: relative;
-      padding: 4.8px 4px 4.8px 4px;
-      margin-left: 80px;
+      padding: 4.8px 4px 4.8px 0;
+      margin-left: 100px;
       box-shadow: none;
 
       &--hidden {
@@ -60,7 +60,7 @@
 
       .nav-link {
         color: $cc-grey1;
-        padding: 0 16px;
+        padding: 1px 7px;
       }
 
       .nav-link:hover {
