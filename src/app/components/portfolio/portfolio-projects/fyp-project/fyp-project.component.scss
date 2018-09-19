@@ -8,9 +8,6 @@
       h1 {
         @extend %margin-bottom;
       }
-      a {
-        color: $cc-light-blue;
-      }
     }
 
     @media screen and (max-width: $screen-xs-min) {

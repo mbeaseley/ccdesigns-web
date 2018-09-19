@@ -1,20 +1,18 @@
 <div class="page__component">
   <div class="page__component--left">
     <div class="component">
-        <div class="component__container">
-          <h1>PORTFOLIO</h1>
-          <div class="component__container--capsule">
-            <div class="image-button" *ngFor="let portImages of portfolioImages">
-              <a [routerLink]="portImages.link">
-                <img [src]="portImages.url" [alt]="portImages.alt" />
-                <span class="image-button__text">{{portImages.name}}</span>
-              </a>
-            </div>
-            <div class="">
-            </div>
+      <div class="component__container">
+        <h1>PORTFOLIO</h1>
+        <div class="component__container--capsule">
+          <div class="image-button" *ngFor="let portImages of portfolioImages">
+            <a [routerLink]="portImages.link">
+              <img [src]="portImages.url" [alt]="portImages.alt" />
+            </a>
+            <div class="image-button__text">{{portImages.name}}</div>
           </div>
         </div>
       </div>
+    </div>
   </div>
   <div class="page__component--right">
     <slideshow
