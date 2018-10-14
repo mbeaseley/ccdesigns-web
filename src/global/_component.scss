@@ -9,13 +9,17 @@
     width: 100vw;
     height: 97vh;
 
+    &--left::-webkit-scrollbar {
+      display: none;
+    }
+
     &--left {
       padding: 0 0 10px 0;
       margin-top: 60px;
       flex: 1 1 50vw;
       order: 1;
       min-width: 387px;
-      overflow-y: scroll;
+      overflow: auto;
       overflow-x: hidden;
 
       @media screen and (max-width: $screen-xs-max) {
