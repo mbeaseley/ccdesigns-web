@@ -8,8 +8,7 @@ import { AppGlobals } from '../../../../app.global';
 })
 export class WebsiteProjectComponent implements OnInit {
   imageUrls = [
-    {url: 'https://images.ctfassets.net/43i5e5k8e66i/3FmMgMOcOccuoM0M6ey2su/54aa1a454cb83a86bd5a86e1e0b86998/website_digital_plan.png'},
-    {url: 'https://images.ctfassets.net/43i5e5k8e66i/3FmMgMOcOccuoM0M6ey2su/54aa1a454cb83a86bd5a86e1e0b86998/website_digital_plan.png'},
+    {url: "https://images.ctfassets.net/43i5e5k8e66i/3QV5A6g6Jai2uykcCK8Coy/5e7ec2714aebc0a7e821a59f154541dc/ccdesign_logo_design.jpg"},
     {url: 'https://images.ctfassets.net/43i5e5k8e66i/3FmMgMOcOccuoM0M6ey2su/54aa1a454cb83a86bd5a86e1e0b86998/website_digital_plan.png'}
   ];
 
