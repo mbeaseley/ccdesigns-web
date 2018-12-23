@@ -1,40 +1,40 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
-import { ReactiveFormsModule } from "@angular/forms";
-import { SlideshowModule } from "ng-simple-slideshow";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SlideshowModule } from 'ng-simple-slideshow';
 
-import { AppComponent } from "./app.component";
-import { HomeComponent } from "./components/home/home.component";
-import { PortfolioComponent } from "./components/portfolio/portfolio.component";
-import { ContactComponent } from "./components/contact/contact.component";
+import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { FypProjectComponent } from './components/portfolio/portfolio-projects/fyp-project/fyp-project.component';
 import { WebsiteProjectComponent } from './components/portfolio/portfolio-projects/website-project/website-project.component';
 
 const routes: Routes = [
   {
-    path: "",
+    path: '',
     component: HomeComponent
   },
   {
-    path: "portfolio",
+    path: 'portfolio',
     component: PortfolioComponent
   },
   {
-    path: "portfolio/fyp-project",
+    path: 'portfolio/fyp-project',
     component: FypProjectComponent
   },
   {
-    path: "portfolio/website-project",
+    path: 'portfolio/website-project',
     component: WebsiteProjectComponent
   },
   {
-    path: "contact",
+    path: 'contact',
     component: ContactComponent
   },
   {
-    path: "**",
-    redirectTo: ""
+    path: '**',
+    redirectTo: ''
   }
 ];
 
