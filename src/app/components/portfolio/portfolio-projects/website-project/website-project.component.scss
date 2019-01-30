@@ -1,19 +1,17 @@
-@import "component";
-@import "separator";
-@import "typography";
+@import "variables";
 
-.page {
-  &__component {
-    .component__container {
-      h1 {
-        @extend %margin-bottom;
-      }
-    }
+li {
+  p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
 
-    @media screen and (max-width: $screen-xs-min) {
-      &--left {
-        min-width: 320px;
-      }
-    }
+a {
+  text-decoration: none;
+  color: $cc-light-blue;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
   }
 }

@@ -1,40 +1,12 @@
-@import "component";
-@import "separator";
-@import "typography";
+@import "variables";
 
-.page {
-  &__component {
-    &--left {
-      .component {
-        &__container {
-          &--heading {
-            font-weight: bolder;
+  h1,
+  h2 {
+    font-size: 79px;
+    margin-bottom: 0;
 
-            h1,
-            h2 {
-              font-size: 79px;
-              margin-bottom: 0;
-
-              @media (max-width: $creen-md-max) { font-size: 68px; }
-              @media (max-width: $screen-sm-max) { font-size: 60px; }
-              @media (max-width: $screen-xs-min) { font-size: 50px; }
-              @media (max-height: $screen-height-xs) { font-size: 40px; }
-            }
-          }
-        }
-      }
-    }
-
-    @media screen and (max-width: $screen-xs-min) {
-      &--left {
-        min-width: 357px;
-      }
-    }
-
-    @media (max-height: $screen-height-xs) {
-      &--right {
-        margin-bottom: 30px;
-      }
-    }
+    @media (max-width: $screen-md-max) { font-size: 68px; }
+    @media (max-width: $screen-sm-max) { font-size: 60px; }
+    @media (max-width: $screen-xs-min) { font-size: 50px; }
+    @media (max-height: $screen-height-xs) { font-size: 40px; }
   }
-}

@@ -1,39 +1,38 @@
-<div class="page__component">
-  <div class="page__component--left">
-    <div class="component">
-      <div class="component__container">
-        <h1>Final Year Project</h1>
-        <hr>
-        <p>My final year project at Brunel University was title "Using Smartphone technology to simulate human
-          behaviour within an indoor environment".</p>
-        <p>Summary of the project is as followed: </p>
-        <ul>
-          <li>Created an Android Application which allowed a user to navigate through an indoor environment.</li>
-          <li>Project included the use of NFC, Beacons, Wi-Fi, and Java.</li>
-          <li>The model used was the Waterfall Model due to the scope of the project but Android development was
-            completed using a similar process that the Spiral Model presented.</li>
-          <li>A literature review was conducted as well as a survey data was researched to underline the requirements
-            of the application.</li>
-          <li>Created Low and High fidelity prototypes of the User Interface, whereas Class, Sequential and Use case
-            diagram was created to developed how and what variables and processes are needed.</li>
-          <li>The development of the application was conducted on Android Studio alongside an external Software
-            Development Kit from Indooratlas.</li>
-          <li>The application was tested using requirement verification as well as performance testing through GPU and
-            CPU monitoring.</li>
-          <li>The application was evaluated against major application on battery usage, accuracy, and loading times.</li>
-        </ul>
-        <hr>
-        <p><b>Download link For Dissertation is <a href="https://assets.ctfassets.net/43i5e5k8e66i/1j26Xbtj2O2EyQ6wEIUggu/924a3bf68c803c3deaf515ea7f1072ea/fyp_uni.pdf">here</a></b></p>
-      </div>
-    </div>
+<div class="page__body--left">
+  <div slot="left-side">
+    <ccdesign-copy
+      copy="<h1>Final Year Project</h1>">
+    </ccdesign-copy>
+    <ccdesign-separator></ccdesign-separator>
+    <ccdesign-copy
+      copy="<p>My final year project at Brunel University was title 'Using Smartphone technology to simulate human
+        behaviour within an indoor environment'.</p><ul>
+        <li><p>Created an Android Application which allowed a user to navigate through an indoor environment.</p></li>
+        <li><p>Project included the use of NFC, Beacons, Wi-Fi, and Java.</p></li>
+        <li><p>The model used was the Waterfall Model due to the scope of the project but Android development was
+          completed using a similar process that the Spiral Model presented.</p></li>
+        <li><p>A literature review was conducted as well as a survey data was researched to underline the requirements
+          of the application.</p></li>
+        <li><p>Created Low and High fidelity prototypes of the User Interface, whereas Class, Sequential and Use case
+          diagram was created to developed how and what variables and processes are needed.</p></li>
+        <li><p>The development of the application was conducted on Android Studio alongside an external Software
+          Development Kit from Indooratlas.</p></li>
+        <li><p>The application was tested using requirement verification as well as performance testing through GPU and
+          CPU monitoring.</p></li>
+        <li><p>The application was evaluated against major application on battery usage, accuracy, and loading times.</p></li>
+        </ul>">
+    </ccdesign-copy>
+    <ccdesign-separator></ccdesign-separator>
+    <ccdesign-copy
+      copy="<p><b>Download link For Dissertation is <a href='https://assets.ctfassets.net/43i5e5k8e66i/1j26Xbtj2O2EyQ6wEIUggu/924a3bf68c803c3deaf515ea7f1072ea/fyp_uni.pdf'>here</a></b></p>">
+    </ccdesign-copy>
   </div>
-  <div class="page__component--right">
-    <slideshow 
-      [imageUrls]="imageUrls" 
-      [showArrows]="false" 
-      [lazyLoad]="imageUrls?.length > 1" 
-      [autoPlay]="true"
-      [autoPlayInterval]="10000">
-    </slideshow>
+</div>
+<div class="page__body--right">
+  <div slot="right-side">
+    <ccdesign-carousel
+      data="[ { id: 'fypDevelopmentProcess', image: 'https://images.ctfassets.net/43i5e5k8e66i/2olnrwDLIgUEggOMEKOOCo/3fe87a89706a21865de5e16e3ce8b697/fyp_development_process.png', alt: 'Final Year Project Development Process'}, { id: 'fypSoftwareDevelopment', image: 'https://images.ctfassets.net/43i5e5k8e66i/19NvMzaVtOS8IsKkYeAwGi/1b266aca6a171f9f99a7708aa722c2c9/fyp_software_development.png', alt: 'Final Year Project Software Development'}, { id: 'fypCpuTesting', image: 'https://images.ctfassets.net/43i5e5k8e66i/6OIgcSCzzGe0ck6EeSQCww/19d9b65f92eeffcc7179cdd7293a42ee/fyp_cpu_testing.png', alt: 'Final Year Project CPU Testing'} ]"
+      time-interval="7500">
+    </ccdesign-carousel>
   </div>
 </div>

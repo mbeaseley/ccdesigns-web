@@ -1,33 +1,35 @@
-<div class="page__component">
-  <div class="page__component--left">
-    <div class="component">
-      <div class="component__container">
-        <h1>Personal Website Project</h1>
-        <hr>
-        <p>This project is the first actual project live in production to be view. Purpose of my personal website is to
-          act like a CV and a promotion for all further projects created by myself. </p>
-        <p>Summary of the project is as followed:</p>
-        <ul>
-          <li>Website is created in Angular 6 using Bootstrap 4. </li>
-          <li>Content is supplied by Contentful (currently just assets).</li>
-          <li>Azure and Azure DevOps is the cloud computering platform used to put website into Production.</li>
-          <li>Continous Integration is set up based on any commit made in the master branch on git. </li>
-          <li>Azure DevOps, as well as the codebase, uses yarn to install dependencies and run a build for production.</li>
-          <li>Created the project in github following gitflow principles.</li>
-          <li>Website was designed with paper and digitaled via Axure RP.</li>
-        </ul>
-        <hr>
-        <p><b>Link to the codebase in github is <a href="https://github.com/mbeaseley/ccdesigns-web">here</a></b></p>
-      </div>
+<div class="page__body--left">
+    <div slot="left-side">
+      <ccdesign-copy
+        copy="<h1>Personal Website Project</h1>">
+      </ccdesign-copy>
+      <ccdesign-separator></ccdesign-separator>
+      <ccdesign-copy
+        copy="<p>This project is the first actual live project in production to be viewed. Purpose of my personal website is to
+            act like a CV and a promotion for all further projects created by myself. This project has been through a evolution, using different libraries and packages.</p>
+          <p>Summary of the project is as followed:</p>
+          <ul>
+            <li><p>The site was initally created using Angular 6 with Bootstrap 4 but has evoluted to use Angular 7 with Iconic Web Components written in StencilJs.</p></li>
+            <li><p>Iconic Web Component Library are used as mentioned. Use this <a href='http://ccdesign.me.uk/portfolio/webcomponent-project'>link</a> for more information.</p></li>
+            <li><p>Content is supplied by Contentful (currently just assets).</p></li>
+            <li><p>Azure and Azure DevOps is the cloud computering platform used to put website into Production.</p></li>
+            <li><p>Continous Integration is set up based on any commit made in the master branch on git. </p></li>
+            <li><p>Azure DevOps, as well as the codebase, uses yarn to install dependencies and run a build for production.</p></li>
+            <li><p>Created the project in github following gitflow principles.</p></li>
+            <li><p>Website was designed with paper and digitaled via Axure RP.</p></li>
+          </ul>">
+      </ccdesign-copy>
+      <ccdesign-separator></ccdesign-separator>
+      <ccdesign-copy
+        copy="<p><b>Link to the codebase in github is <a href='https://github.com/mbeaseley/ccdesigns-web'>here</a></b></p>">
+      </ccdesign-copy>
     </div>
   </div>
-  <div class="page__component--right">
-    <slideshow
-      [imageUrls]="imageUrls"
-      [showArrows]="false"
-      [lazyLoad]="imageUrls?.length > 1"
-      [autoPlay]="true"
-      [autoPlayInterval]="10000">
-    </slideshow>
+  <div class="page__body--right">
+    <div slot="right-side">
+      <ccdesign-carousel
+        data="[ { id: 'logoDesign', image: 'https://images.ctfassets.net/43i5e5k8e66i/3QV5A6g6Jai2uykcCK8Coy/5e7ec2714aebc0a7e821a59f154541dc/ccdesign_logo_design.jpg', alt: 'Logo Design of CCDesign.me.uk'}, { id: 'websiteDigitalPlan', image: 'https://images.ctfassets.net/43i5e5k8e66i/3FmMgMOcOccuoM0M6ey2su/54aa1a454cb83a86bd5a86e1e0b86998/website_digital_plan.png', alt: 'CCDesign Website Digital Plan'}, { id: 'websitePic', image: 'https://images.ctfassets.net/43i5e5k8e66i/4O1Qth30iI6uOgQy88eoEi/9e82a8072453dadd927df09a146be1c2/website_pic.jpg', alt: 'Image of website'} ]"
+        time-interval="7500">
+      </ccdesign-carousel>
+    </div>
   </div>
-</div>

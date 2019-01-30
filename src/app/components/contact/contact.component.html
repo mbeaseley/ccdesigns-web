@@ -1,22 +1,19 @@
-<div class="page__component">
-    <div class="page__component--left">
-      <div class="component">
-        <div class="component__container">
-          <h1>CONTACT ME</h1>
-          <p>Contact Form coming soon!</p>
-          <hr>
-          <p>Looking forward to answering your email</p>
-          <p><b>Email</b> m.t.beaseley@gmail.com</p>
-        </div>
-      </div>
-    </div>
-    <div class="page__component--right">
-      <slideshow
-        [imageUrls]="imageUrls"
-        [showArrows]="false"
-        [lazyLoad]="imageUrls?.length > 1"
-        [autoPlay]="true"
-        [autoPlayInterval]="10000">
-      </slideshow>
-    </div>
+<div class="page__body--left">
+  <div slot="left-side">
+    <ccdesign-copy
+      copy="<h1>CONTACT ME</h1><p>Contact Form coming soon!</p>">
+    </ccdesign-copy>
+    <ccdesign-separator></ccdesign-separator>
+    <ccdesign-copy
+      copy="<p>Looking forward to answering your email</p><p><b>Email</b> m.t.beaseley@gmail.com</p>">
+    </ccdesign-copy>
   </div>
+</div>
+<div class="page__body--right">
+  <div slot="right-side">
+    <ccdesign-carousel
+      data="[ { id: 'profilePic', image: 'https://images.ctfassets.net/43i5e5k8e66i/2tbgM7o5Wk6208QeuQM6o0/e40591acca2af7f3eb835a1d3bc57fc2/profile_pic.jpg', alt: 'Image of Michael Beaseley'}, { id: 'profileStationPic', image: 'https://images.ctfassets.net/43i5e5k8e66i/pj0mHN9DtQUg4gOuqm8KE/c4b222cd1703b4f608d68fabc4ccef0a/profile_station.jpg', alt: 'Image of Michael Beaseley'}, { id: 'profilePicture', image: 'https://images.ctfassets.net/43i5e5k8e66i/3s2QTQy7ryM46G2ewIesO2/98e50163a5281ceda24048302fdb3b6e/profile_new.jpg', alt: 'Image of Michael Beaseley'} ]"
+      time-interval="7500">
+    </ccdesign-carousel>
+  </div>
+</div>
