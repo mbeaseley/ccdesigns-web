@@ -181,10 +181,10 @@
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-7.2.0.tgz#9602847c03d269234b33a4ddadaa919f2d558227"
   integrity sha512-UDmIRR0ybdafrJLHkSDgc/3PpsA9lnwXqGMSAyyhEF3InORFFkloAb0a6Naz+y8ePgEMfqbpyWjtzo8qGtOmEQ==
 
-"@angular/material@^7.2.1":
-  version "7.2.2"
-  resolved "https://registry.yarnpkg.com/@angular/material/-/material-7.2.2.tgz#1b426b64f2549d5dca8439b4649ea70fb9e980fd"
-  integrity sha512-HTtDhK5XkDvP6GPg4WTTa0HbeeagTfVRooTfw0TA+IuTAMBhXt5h1yzuGpFyMap8/PUVZN1D04g2CLhBSzoDxg==
+"@angular/material@^7.2.2":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-7.3.0.tgz#66df738234a57f03618c55ed9c83c080531d7aad"
+  integrity sha512-wWf7dSX8pu9dY9GWiXJfYLA3LTSBREtHLr1NxhN26tQWxGKQ7NJBXth1GTgvojmwt5GzL2j4uyfq/PPvnp95iw==
   dependencies:
     tslib "^1.7.1"
 
@@ -1390,10 +1390,10 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-ccdesign-components@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.1.1.tgz#c26dc5b1082dcd2a4ebec0b7149fc4897355067a"
-  integrity sha512-zYuYWms8ueHuoNSZSxMCz/kz5IADHA9y3kY5MZcbv6kF9vQC1x5f6NM8M3+MxO8euqaHyurihAquuOYjZRdxgA==
+ccdesign-components@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.2.0.tgz#74e382db334ac6aae17a9c49cc9e1359bf105dad"
+  integrity sha512-rObWNMs+WvphbnHwMpUAgUMiBol1nDWwCHaSJH7XGBK8FEd14IpF0w9eTNwB6HBnDzOzs3wxWVyoEK8wN5Lu/g==
   dependencies:
     "@stencil/helmet" "^0.3.0-2"
 
