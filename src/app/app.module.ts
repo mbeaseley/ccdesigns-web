@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-import { SlideshowModule } from 'ng-simple-slideshow';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -10,6 +9,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FypProjectComponent } from './components/portfolio/portfolio-projects/fyp-project/fyp-project.component';
 import { WebsiteProjectComponent } from './components/portfolio/portfolio-projects/website-project/website-project.component';
+// tslint:disable-next-line
+import { WebcomponentProjectComponent } from './components/portfolio/portfolio-projects/webcomponent-project/webcomponent-project.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
     component: WebsiteProjectComponent
   },
   {
+    path: 'portfolio/webcomponent-project',
+    component: WebcomponentProjectComponent
+  },
+  {
     path: 'contact',
     component: ContactComponent
   },
@@ -45,10 +50,12 @@ const routes: Routes = [
     PortfolioComponent,
     ContactComponent,
     FypProjectComponent,
-    WebsiteProjectComponent
+    WebsiteProjectComponent,
+    WebcomponentProjectComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes), SlideshowModule, ReactiveFormsModule],
+  imports: [BrowserModule, RouterModule.forRoot(routes), ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {}

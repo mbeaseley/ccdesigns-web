@@ -1,26 +1,35 @@
-<div class="page__component">
-  <div class="page__component--left">
-    <div class="component">
-      <div class="component__container">
-        <h1>PORTFOLIO</h1>
-        <div class="component__container--capsule">
-          <div class="image-button" *ngFor="let portImages of portfolioImages">
-            <a [routerLink]="portImages.link">
-              <img [src]="portImages.url" [alt]="portImages.alt" />
-            </a>
-            <div class="image-button__text">{{portImages.name}}</div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="page__body--left">
+  <div slot="left-side">
+    <ccdesign-grid heading="PORTFOLIO" columns="2">
+      <ccdesign-image-card 
+        slot="children"
+        url="/portfolio/webcomponent-project"
+        image-url="https://images.ctfassets.net/43i5e5k8e66i/2bu4HSFHLHGCEuX4epNQ2h/8bf0a45ede95ace2a8d115374405b672/logo.png" 
+        image-alt="CCDesign Web Component Library" 
+        description="CCDesign Component Library">
+      </ccdesign-image-card>
+      <ccdesign-image-card 
+        slot="children"
+        url="/portfolio/website-project"
+        image-url="https://images.ctfassets.net/43i5e5k8e66i/5fOT7Co3DGLPkFW497jGGj/6b312847ab75a64ad71f556965a21892/webLogo.png" 
+        image-alt="CCDesign Website Logo" 
+        description="Personal Website Project">
+      </ccdesign-image-card>
+      <ccdesign-image-card 
+        slot="children" 
+        url="/portfolio/fyp-project"
+        image-url="https://images.ctfassets.net/43i5e5k8e66i/J6F5SWf6uWQ2yAGsSayMM/c0c9daa6fda2775a0494c71c0261770d/FYP_Logo.png" 
+        image-alt="University Final Year Project" 
+        description="University Final Year Project">
+      </ccdesign-image-card>
+    </ccdesign-grid>
   </div>
-  <div class="page__component--right">
-    <slideshow
-      [imageUrls]="imageUrls"
-      [showArrows]="false"
-      [lazyLoad]="imageUrls?.length > 1"
-      [autoPlay]="true"
-      [autoPlayInterval]="10000">
-    </slideshow>
+</div>
+<div class="page__body--right">
+  <div slot="right-side">
+    <ccdesign-carousel
+      data="[ { id: 'websitePic', image: 'https://images.ctfassets.net/43i5e5k8e66i/4O1Qth30iI6uOgQy88eoEi/9e82a8072453dadd927df09a146be1c2/website_pic.jpg', alt: 'Image of website'}, { id: 'logo', image: 'https://images.ctfassets.net/43i5e5k8e66i/3QV5A6g6Jai2uykcCK8Coy/5e7ec2714aebc0a7e821a59f154541dc/ccdesign_logo_design.jpg', alt: 'Image of CCDesign Logo'}, { id: 'androidScreenPic', image: 'https://images.ctfassets.net/43i5e5k8e66i/3JfTj0C6VOcom8684eu6A8/17441f5aab777055e63b1ce9c20339b3/d940d393-ac86-4516-9f6c-52bf33b05852.jpeg', alt: 'Image of Android Screen'} ]"
+      time-interval="7500">
+    </ccdesign-carousel>
   </div>
 </div>

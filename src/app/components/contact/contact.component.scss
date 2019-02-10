@@ -1,19 +1,19 @@
-@import "component";
-@import "separator";
-@import "typography";
+// .page {
+//   &__component {
+//     .component__container {
+//       h1 {
+//         @extend %margin-bottom;
+//       }
+//     }
 
-.page {
-  &__component {
-    .component__container {
-      h1 {
-        @extend %margin-bottom;
-      }
-    }
+//     @media screen and (max-width: $screen-xs-min) {
+//       &--left {
+//         min-width: 320px;
+//       }
+//     }
+//   }
+// }
 
-    @media screen and (max-width: $screen-xs-min) {
-      &--left {
-        min-width: 320px;
-      }
-    }
-  }
+h1 {
+  margin-bottom: 20px;
 }
