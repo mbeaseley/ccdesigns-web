@@ -1360,10 +1360,10 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-ccdesign-components@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.3.0.tgz#2b8428e43d4508cfa24f1b56de852a361cde41c9"
-  integrity sha512-zaDpBd80SMwhrTxWrMM/S/0b3Pg17ds5fd7fr9rCHcEbZcfcZlFY6WDQ2brnM9/dzRyRNelKG7FiKoC1Xqm8lg==
+ccdesign-components@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.3.1.tgz#7a89e0be211c665c1f9a495e737b51bb0d3dccea"
+  integrity sha512-pQff84lKQ9bxAWGAdjbM8eeErtXnsjyJU9Bi8QuzRQKMuZXhtr7QVNnsD2AiIAPWludvHP2HVtG0IcvXecBkrw==
   dependencies:
     "@stencil/helmet" "^0.3.0-2"
 
