@@ -3,7 +3,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { PortfolioComponent } from './portfolio.component';
 
-describe('TestComponent', () => {
+describe('PortfolioComponent', () => {
   let component: PortfolioComponent;
   let fixture: ComponentFixture<PortfolioComponent>;
 

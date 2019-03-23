@@ -3,7 +3,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { WebcomponentProjectComponent } from './webcomponent-project.component';
 
-describe('TestComponent', () => {
+describe('WebcomponentProjectComponent', () => {
   let component: WebcomponentProjectComponent;
   let fixture: ComponentFixture<WebcomponentProjectComponent>;
 

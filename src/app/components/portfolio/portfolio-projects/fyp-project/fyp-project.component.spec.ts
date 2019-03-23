@@ -3,7 +3,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { FypProjectComponent } from './fyp-project.component';
 
-describe('TestComponent', () => {
+describe('FypProjectComponent', () => {
   let component: FypProjectComponent;
   let fixture: ComponentFixture<FypProjectComponent>;
 
