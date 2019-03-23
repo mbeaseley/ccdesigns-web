@@ -1,4 +1,7 @@
 import { AppPage } from './app.po';
+import { browser } from 'protractor';
+import { createPublicKey } from 'crypto';
+// import {  } from '@angular/core/testing';
 
 describe('ccdesigns-web App', () => {
   let page: AppPage;
@@ -56,13 +59,13 @@ describe('ccdesigns-web App', () => {
       page.navigateTo('/portfolio/webcomponent-project');
     });
 
-    it('should have back button in navbar', () => {
-      expect(page.getElement('#chevron-left')).toBeDefined();
-    });
-
     it('should display only one h1', () => {
       expect(page.getElementCount('h1')).toEqual(1);
       expect(page.getElementText('h1')).toEqual('CCDesign Web Component Library');
+    });
+
+    it('should have back button in navbar', () => {
+      expect(page.getElement('#chevron-left')).toBeDefined();
     });
   });
 
@@ -72,29 +75,29 @@ describe('ccdesigns-web App', () => {
       page.navigateTo('/portfolio/website-project ');
     });
 
-    it('should have back button in navbar', () => {
-      expect(page.getElement('#chevron-left')).toBeDefined();
-    });
-
     it('should display only one h1', () => {
       expect(page.getElementCount('h1')).toEqual(1);
       expect(page.getElementText('h1')).toEqual('Personal Website Project');
     });
+
+    it('should have back button in navbar', () => {
+      expect(page.getElement('#chevron-left')).toBeDefined();
+    });
   });
-  
+
   // E2E Tests - Final Year Project
   describe ('University FYP Project', () => {
     beforeEach(() => {
       page.navigateTo('/portfolio/fyp-project');
     });
 
-    it('should have back button in navbar', () => {
-      expect(page.getElement('#chevron-left')).toBeDefined();
-    });
-
     it('should display only one h1', () => {
       expect(page.getElementCount('h1')).toEqual(1);
       expect(page.getElementText('h1')).toEqual('Final Year Project');
+    });
+
+    it('should have back button in navbar', () => {
+      expect(page.getElement('#chevron-left')).toBeDefined();
     });
   });
 

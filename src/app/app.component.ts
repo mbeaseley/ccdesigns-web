@@ -51,5 +51,8 @@ export class AppComponent implements OnInit {
     ]);
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('%cSTOP!', 'font-weight: bold; font-size: 50px;color: red;');
+    console.log('%cThis is a browser feature intended for developers.', 'font-size: 18px; color: white;');
+  }
 }
