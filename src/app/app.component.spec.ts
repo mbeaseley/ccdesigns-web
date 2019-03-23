@@ -3,7 +3,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {RouterTestingModule} from '@angular/router/testing';
 import {Router} from '@angular/router';
 import {Location} from '@angular/common';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -101,10 +101,19 @@ describe('AppComponent', () => {
 
   describe('MetaData: App', () => {
     let titleService: Title;
+    let metaService: Meta;
 
     it('the page title should be correct', (() => {
       titleService = TestBed.get(Title);
       expect(titleService.getTitle()).toEqual('CCDesigns');
     }));
+
+    it('should render meta tags correctly', () => {
+      metaService = TestBed.get(Meta);
+      expect(metaService.getTags('name').length > 0).toBeTruthy();
+      expect(metaService.getTags('name = viewport')).toBeTruthy();
+      expect(metaService.getTags('name = description')).toBeTruthy();
+      expect(metaService.getTags('name = author')).toBeTruthy();
+    });
   });
 });
