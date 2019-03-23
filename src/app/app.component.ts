@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { Meta } from '@angular/platform-browser';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private meta: Meta) {
+  constructor(private meta: Meta, private titleService: Title) {
     this.meta.addTags([
       {
         name: 'viewport',
@@ -47,6 +47,7 @@ export class AppComponent implements OnInit {
         content: '#000000'
       }
     ]);
+    this.titleService.setTitle('CCDesigns');
   }
 
   ngOnInit() {
