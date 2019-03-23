@@ -111,9 +111,15 @@ describe('AppComponent', () => {
     it('should render meta tags correctly', () => {
       metaService = TestBed.get(Meta);
       expect(metaService.getTags('name').length > 0).toBeTruthy();
-      expect(metaService.getTags('name = viewport')).toBeTruthy();
-      expect(metaService.getTags('name = description')).toBeTruthy();
-      expect(metaService.getTags('name = author')).toBeTruthy();
+      expect(metaService.getTags('name = "viewport"')).toBeTruthy();
+      expect(metaService.getTags('name = "description"')).toBeTruthy();
+      expect(metaService.getTags('name = "og:description"')).toBeTruthy();
+      expect(metaService.getTags('name = "author"')).toBeTruthy();
+      expect(metaService.getTags('name = "og:author"')).toBeTruthy();
+      expect(metaService.getTags('name = "og:image"')).toBeTruthy();
+      expect(metaService.getTags('name = "og:url"')).toBeTruthy();
+      expect(metaService.getTags('name = "twitter:card"')).toBeTruthy();
+      expect(metaService.getTags('name = "theme-color"')).toBeTruthy();
     });
   });
 });
