@@ -11,7 +11,6 @@ import { FypProjectComponent } from './components/portfolio/portfolio-projects/f
 import { WebsiteProjectComponent } from './components/portfolio/portfolio-projects/website-project/website-project.component';
 // tslint:disable-next-line
 import { WebcomponentProjectComponent } from './components/portfolio/portfolio-projects/webcomponent-project/webcomponent-project.component';
-
 const routes: Routes = [
   {
     path: '',

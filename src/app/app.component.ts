@@ -1,16 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
-import { AppGlobals } from './app.global';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  providers: [AppGlobals]
 })
 export class AppComponent implements OnInit {
 
-  constructor(private meta: Meta, public global: AppGlobals) {
+  constructor(private meta: Meta) {
     this.meta.addTags([
       {
         name: 'viewport',

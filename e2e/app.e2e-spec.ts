@@ -1,7 +1,4 @@
 import { AppPage } from './app.po';
-import { browser } from 'protractor';
-import { createPublicKey } from 'crypto';
-// import {  } from '@angular/core/testing';
 
 describe('ccdesigns-web App', () => {
   let page: AppPage;

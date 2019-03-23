@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { AppGlobals } from '../../../../app.global';
 
 @Component({
   selector: 'app-webcomponent-project',
@@ -8,9 +7,7 @@ import { AppGlobals } from '../../../../app.global';
   encapsulation: ViewEncapsulation.None
 })
 export class WebcomponentProjectComponent implements OnInit {
-  constructor(public global: AppGlobals) {
-    this.global.locationBoolean = true;
-  }
+  constructor() {}
 
   ngOnInit() {}
 

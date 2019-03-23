@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { AppGlobals } from '../../app.global';
 
 @Component({
   selector: 'app-contact',
@@ -15,8 +14,7 @@ export class ContactComponent implements OnInit {
     {url: this.contentfulUrl +  'pj0mHN9DtQUg4gOuqm8KE/c4b222cd1703b4f608d68fabc4ccef0a/profile_station.jpg'},
   ];
 
-  constructor(public global: AppGlobals) {
-    this.global.locationBoolean = false;
-  }
+  constructor() {}
+
   ngOnInit() {}
 }
