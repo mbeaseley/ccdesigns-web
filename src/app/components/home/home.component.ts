@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { AppGlobals } from '../../app.global';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +7,8 @@ import { AppGlobals } from '../../app.global';
   encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
-  constructor(public global: AppGlobals) {
-    this.global.locationBoolean = false;
-  }
+  constructor() {}
+
   ngOnInit() {
   }
 

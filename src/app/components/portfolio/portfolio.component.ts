@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { AppGlobals } from '../../app.global';
 
 @Component({
   selector: 'app-portfolio',
@@ -8,8 +7,7 @@ import { AppGlobals } from '../../app.global';
   encapsulation: ViewEncapsulation.None
 })
 export class PortfolioComponent implements OnInit {
-  constructor(public global: AppGlobals) {
-    this.global.locationBoolean = false;
-  }
+  constructor() {}
+
   ngOnInit() {}
 }

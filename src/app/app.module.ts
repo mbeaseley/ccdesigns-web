@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -11,37 +11,7 @@ import { FypProjectComponent } from './components/portfolio/portfolio-projects/f
 import { WebsiteProjectComponent } from './components/portfolio/portfolio-projects/website-project/website-project.component';
 // tslint:disable-next-line
 import { WebcomponentProjectComponent } from './components/portfolio/portfolio-projects/webcomponent-project/webcomponent-project.component';
-
-const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent
-  },
-  {
-    path: 'portfolio',
-    component: PortfolioComponent
-  },
-  {
-    path: 'portfolio/fyp-project',
-    component: FypProjectComponent
-  },
-  {
-    path: 'portfolio/website-project',
-    component: WebsiteProjectComponent
-  },
-  {
-    path: 'portfolio/webcomponent-project',
-    component: WebcomponentProjectComponent
-  },
-  {
-    path: 'contact',
-    component: ContactComponent
-  },
-  {
-    path: '**',
-    redirectTo: ''
-  }
-];
+import { routes } from './routes';
 
 @NgModule({
   declarations: [
