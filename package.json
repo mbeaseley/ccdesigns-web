@@ -52,7 +52,6 @@
     "typescript": "3.2.4"
   },
   "resolutions": {
-    "@angular-devkit/build-angular/**/tar": "~4.4.2",
-    "@angular-devkit/build-angular/**/fstream": "~1.0.12"
+    "@angular-devkit/build-angular/**/tar": "~4.4.2"
   }
 }
