@@ -24,7 +24,7 @@
     "@angular/platform-browser": "7.2.15",
     "@angular/platform-browser-dynamic": "7.2.15",
     "@angular/router": "7.2.15",
-    "ccdesign-components": "^1.4.0",
+    "ccdesign-components": "^1.5.0",
     "core-js": "^2.6.5",
     "rxjs": "^6.4.0",
     "zone.js": "^0.8.29"
@@ -52,7 +52,6 @@
     "typescript": "3.2.4"
   },
   "resolutions": {
-    "@angular-devkit/build-angular/**/tar": "~4.4.2",
-    "@angular-devkit/build-angular/**/fstream": "~1.0.12"
+    "@angular-devkit/build-angular/**/tar": "~4.4.2"
   }
 }

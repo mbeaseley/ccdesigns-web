@@ -1442,10 +1442,10 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-ccdesign-components@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.4.0.tgz#9a0ee2e2fa5472512350dca3e1da69b000947c69"
-  integrity sha512-X3JzmFDmAfrAv4rGL1PvfTjmcimixEkCNpF5nxI9DZxoB2Ebd34YyU29JF3QC8kq3/2yl/vUBuEanW7SxQsMcQ==
+ccdesign-components@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.5.0.tgz#8d5533e93f9dac8151b8a230003ec729c33aa9ef"
+  integrity sha512-W5UkMZv1SjCvgC0JDiRzL8FMXu9SLMUDVs3d2dOY3yb4Bb3ts+2HzVkyHVYhtF8JxUc3+KIq8UoKi/qVsyuf6Q==
   dependencies:
     "@polymer/polymer" "^3.2.0"
     "@stencil/helmet" "^0.3.0-2"
@@ -2882,7 +2882,7 @@ fsevents@^1.2.2, fsevents@^1.2.7:
     nan "^2.12.1"
     node-pre-gyp "^0.12.0"
 
-fstream@^1.0.0, fstream@~1.0.12:
+fstream@^1.0.0:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/fstream/-/fstream-1.0.12.tgz#4e8ba8ee2d48be4f7d0de505455548eae5932045"
   integrity sha512-WvJ193OHa0GHPEL+AycEJgxvBEwyfRkN1vhjca23OaPVMCaLCXTd5qAu82AjTcgP1UJmytkOKb63Ypde7raDIg==
