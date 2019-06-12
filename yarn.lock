@@ -1442,10 +1442,10 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-ccdesign-components@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.5.0.tgz#8d5533e93f9dac8151b8a230003ec729c33aa9ef"
-  integrity sha512-W5UkMZv1SjCvgC0JDiRzL8FMXu9SLMUDVs3d2dOY3yb4Bb3ts+2HzVkyHVYhtF8JxUc3+KIq8UoKi/qVsyuf6Q==
+ccdesign-components@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.6.0.tgz#ab4fd1a14ab81679d4245d4bb0b4ffba81ee1638"
+  integrity sha512-Bv2meIdUqbHUGV4P8Cwptg4TN+Tn2kuYs5olq2R+CKCxoWwEgGTo0WyYpFUWh3UsBl61t51VxsWqfmlysKPeZA==
   dependencies:
     "@polymer/polymer" "^3.2.0"
     "@stencil/helmet" "^0.3.0-2"
