@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
       },
       {
         name: 'og:image',
-        content: 'https://images.ctfassets.net/43i5e5k8e66i/4O1Qth30iI6uOgQy88eoEi/69d808e24229858cdaa959d887563533/website_pic-min.jpg'
+        content: 'https://images.ctfassets.net/43i5e5k8e66i/4O1Qth30iI6uOgQy88eoEi/2bef6e2bc4619e569a5d9c4a145b10dc/website_pic-min.jpg'
       },
       {
         name: 'og:url',
