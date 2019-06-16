@@ -10,8 +10,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FypProjectComponent } from './components/portfolio/portfolio-projects/fyp-project/fyp-project.component';
 import { WebsiteProjectComponent } from './components/portfolio/portfolio-projects/website-project/website-project.component';
 // tslint:disable-next-line
-import { WebcomponentProjectComponent } from './components/portfolio/portfolio-projects/webcomponent-project/webcomponent-project.component';
+import { WebcomponentProjectComponent } from "./components/portfolio/portfolio-projects/webcomponent-project/webcomponent-project.component";
 import { routes } from './routes';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,14 @@ import { routes } from './routes';
     WebsiteProjectComponent,
     WebcomponentProjectComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes), ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production
+    })
+  ],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

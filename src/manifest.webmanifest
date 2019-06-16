@@ -1,0 +1,16 @@
+{
+  "name": "ccdesigns-web",
+  "short_name": "ccdesigns-web",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "assets/favicon.ico",
+      "sizes": "256x265",
+      "type": "image/ico"
+    }
+  ]
+}
