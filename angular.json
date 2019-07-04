@@ -20,7 +20,7 @@
               "src/assets",
               "src/favicon.svg",
               "src/web.config",
-              "src/manifest.webmanifest"
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.scss"
@@ -91,7 +91,7 @@
               "src/assets",
               "src/favicon.svg",
               "src/web.config",
-              "src/manifest.webmanifest"
+              "src/manifest.json"
             ]
           }
         },
