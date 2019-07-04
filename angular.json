@@ -18,8 +18,9 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/favicon.ico",
-              "src/web.config"
+              "src/favicon.svg",
+              "src/web.config",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.scss"
@@ -47,7 +48,9 @@
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "ngsw-config.json"
             }
           }
         },
@@ -86,8 +89,9 @@
             },
             "assets": [
               "src/assets",
-              "src/favicon.ico",
-              "src/web.config"
+              "src/favicon.svg",
+              "src/web.config",
+              "src/manifest.webmanifest"
             ]
           }
         },

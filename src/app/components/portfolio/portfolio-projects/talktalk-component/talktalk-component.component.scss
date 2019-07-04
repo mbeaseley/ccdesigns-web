@@ -1,0 +1,25 @@
+@import "variables";
+
+li {
+  p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $cc-light-blue;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.page__body--right {
+  background-color: #181619;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('https://images.ctfassets.net/43i5e5k8e66i/UiyKpDoyFRD6WnkohwvvL/edc56fb5e54b818c74c053881d98cd71/ttcomponent.svg');
+}

@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,47 +7,7 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private meta: Meta, private titleService: Title) {
-    this.meta.addTags([
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
-      },
-      {
-        name: 'description',
-        content: 'Personal CV based Website. See any previous projects. Get to know who is Michael Beaseley and what he has got to offer.'
-      },
-      {
-        name: 'og:description',
-        content: 'Personal CV based Website. See any previous projects. Get to know who is Michael Beaseley and what he has got to offer.'
-      },
-      {
-        name: 'author',
-        content: 'Michael Beaseley'
-      },
-      {
-        name: 'og:author',
-        content: 'Michael Beaseley'
-      },
-      {
-        name: 'og:image',
-        content: 'https://images.ctfassets.net/43i5e5k8e66i/4O1Qth30iI6uOgQy88eoEi/2bef6e2bc4619e569a5d9c4a145b10dc/website_pic-min.jpg'
-      },
-      {
-        name: 'og:url',
-        content: 'http://ccdesign.me.uk/'
-      },
-      {
-        name: 'twitter:card',
-        content: 'summary_large_image'
-      },
-      {
-        name: 'theme-color',
-        content: '#000000'
-      }
-    ]);
-    this.titleService.setTitle('CCDesigns');
-  }
+  constructor() { }
 
   ngOnInit() {
     console.log('%cSTOP!', 'font-weight: bold; font-size: 50px;color: red;');

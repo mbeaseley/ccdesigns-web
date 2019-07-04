@@ -1,0 +1,25 @@
+@import "variables";
+
+li {
+  p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $cc-light-blue;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.page__body--right {
+  background-color: #181619;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('https://images.ctfassets.net/43i5e5k8e66i/7crGb8DYVAnSbsiLerNcdI/9fea452752bec2aeff30766fd6601e78/azure-portfolio.svg');
+}

@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import {RouterTestingModule} from '@angular/router/testing';
-import {Router} from '@angular/router';
-import {Location} from '@angular/common';
+import { RouterTestingModule } from '@angular/router/testing';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 import { Title, Meta } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -12,7 +12,6 @@ import { FypProjectComponent } from './components/portfolio/portfolio-projects/f
 // tslint:disable-next-line:max-line-length
 import { WebcomponentProjectComponent } from './components/portfolio/portfolio-projects/webcomponent-project/webcomponent-project.component';
 import { WebsiteProjectComponent } from './components/portfolio/portfolio-projects/website-project/website-project.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { routes } from './routes';
 
 describe('AppComponent', () => {
@@ -30,9 +29,8 @@ describe('AppComponent', () => {
         PortfolioComponent,
         FypProjectComponent,
         WebcomponentProjectComponent,
-        WebsiteProjectComponent,
-        ContactComponent
-     ],
+        WebsiteProjectComponent
+      ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     });
 
@@ -56,7 +54,7 @@ describe('AppComponent', () => {
       const promise = new Promise((resolve) => {
         setTimeout(resolve, 10);
       });
-      let done  = false;
+      let done = false;
       promise.then(() => (done = true));
       tick(50);
       expect(done).toBeTruthy();
