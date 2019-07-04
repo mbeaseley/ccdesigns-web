@@ -18,7 +18,7 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/favicon.ico",
+              "src/favicon.svg",
               "src/web.config",
               "src/manifest.webmanifest"
             ],
@@ -89,7 +89,7 @@
             },
             "assets": [
               "src/assets",
-              "src/favicon.ico",
+              "src/favicon.svg",
               "src/web.config",
               "src/manifest.webmanifest"
             ]

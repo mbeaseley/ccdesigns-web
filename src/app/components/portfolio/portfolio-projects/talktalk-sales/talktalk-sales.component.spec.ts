@@ -1,22 +1,22 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-import { ContactComponent } from './contact.component';
+import { TalktalkSalesComponent } from './talktalk-sales.component';
 
-describe('ContactComponent', () => {
-  let component: ContactComponent;
-  let fixture: ComponentFixture<ContactComponent>;
+describe('TalktalkSalesComponent', () => {
+  let component: TalktalkSalesComponent;
+  let fixture: ComponentFixture<TalktalkSalesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContactComponent ],
+      declarations: [TalktalkSalesComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContactComponent);
+    fixture = TestBed.createComponent(TalktalkSalesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

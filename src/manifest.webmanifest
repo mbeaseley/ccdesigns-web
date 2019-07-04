@@ -1,16 +1,21 @@
 {
-  "name": "ccdesigns-web",
-  "short_name": "ccdesigns-web",
-  "theme_color": "#000000",
+  "short_name": "CCDesign",
+  "name": "CCDesign CV Website",
+  "icons": [
+    {
+      "src": "/assets/favicon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/favicon-192.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
   "background_color": "#000000",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
-  "icons": [
-    {
-      "src": "assets/favicon.ico",
-      "sizes": "256x265",
-      "type": "image/ico"
-    }
-  ]
+  "theme_color": "#000000"
 }
