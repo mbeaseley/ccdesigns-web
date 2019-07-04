@@ -24,8 +24,8 @@
     "@angular/pwa": "^0.801.0",
     "@angular/router": "8.1.0",
     "@angular/service-worker": "8.1.0",
-    "ccdesign-components": "^1.7.1",
-    "core-js": "^3.1.4",
+    "ccdesign-components": "^1.8.1",
+    "core-js": "^2.6.9",
     "rxjs": "^6.5.2",
     "zone.js": "~0.9.1"
   },
@@ -50,6 +50,6 @@
     "protractor": "^5.4.2",
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
-    "typescript": "3.5.2"
+    "typescript": "3.4.5"
   }
 }

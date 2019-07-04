@@ -321,7 +321,7 @@
     tree-kill "1.2.1"
     webpack-sources "1.3.0"
 
-"@polymer/polymer@^3.2.0":
+"@polymer/polymer@^3.3.0":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@polymer/polymer/-/polymer-3.3.0.tgz#52a0665ac29654728e8f46e8ee178c02c49efdd0"
   integrity sha512-rij7suomS7DxdBamnwr/Xa0V5hpypf7I9oYKseF2FWz5Xh2a3wJNpVjgJy1adXVCxqIyPhghsrthnfCt7EblsQ==
@@ -349,11 +349,6 @@
     rxjs "6.4.0"
     semver "6.2.0"
     semver-intersect "1.4.0"
-
-"@stencil/helmet@^0.3.0-2":
-  version "0.3.0-2"
-  resolved "https://registry.yarnpkg.com/@stencil/helmet/-/helmet-0.3.0-2.tgz#b3494e794334f0ffc991df78a8c48ad024253755"
-  integrity sha512-uVwQazBsrGGATIZZXuHf2vFWqMUllvxW6BAGgcV9nFwVF7gPZobsMaD66XODNg6h9GoEQtn3dHUcMiMBc05HtA==
 
 "@types/clone@^0.1.29":
   version "0.1.30"
@@ -1454,14 +1449,13 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-ccdesign-components@^1.7.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.7.1.tgz#c2587ec6333ef883643bf20284ec3ffa8ac52f2a"
-  integrity sha512-oHss01I/a3kZS8AXY6ERkPMFsgbPp9iqyNzgEwoWoOdCcwZzvQsE9ISCu5fugGEHpk5VbPQiMO1gCG0UGPUq5g==
+ccdesign-components@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.8.1.tgz#a18039d31e493317d7089a1f00ed510021605893"
+  integrity sha512-WS3x1OG8L6mdGIMuo1CGlaPEIBGulXl49HOwem87lfd7c+d1LhRudFA7lq2v9dr38+VIFLPqkp8Gm5QZfp1cFQ==
   dependencies:
-    "@polymer/polymer" "^3.2.0"
-    "@stencil/helmet" "^0.3.0-2"
-    lit-html "^1.0.0"
+    "@polymer/polymer" "^3.3.0"
+    lit-html "^1.1.0"
     polymer-webpack-loader "^2.0.3"
 
 chalk@^1.1.1, chalk@^1.1.3:
@@ -1845,12 +1839,12 @@ copy-webpack-plugin@5.0.3:
     serialize-javascript "^1.7.0"
     webpack-log "^2.0.0"
 
-core-js@3.1.4, core-js@^3.1.4:
+core-js@3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.1.4.tgz#3a2837fc48e582e1ae25907afcd6cf03b0cc7a07"
   integrity sha512-YNZN8lt82XIMLnLirj9MhKDFZHalwzzrL9YLt6eb0T5D0EDl4IQ90IGkua8mHbnxNrkj1d8hbdizMc0Qmg1WnQ==
 
-core-js@^2.2.0, core-js@^2.4.0:
+core-js@^2.2.0, core-js@^2.4.0, core-js@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
   integrity sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
@@ -4109,7 +4103,7 @@ lie@~3.3.0:
   dependencies:
     immediate "~3.0.5"
 
-lit-html@^1.0.0:
+lit-html@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.1.0.tgz#6951fb717fb48fe34d915ae163448a04da321562"
   integrity sha512-ZDJHpJi09yknMpjwPI8fuSl5sUG7+pF+eE5WciFtgyX7zebvgMDBgSLq4knXa7grxM00RkQ7PBd7UZQiruA78Q==
@@ -6768,11 +6762,6 @@ typescript@3.4.5:
   version "3.4.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.5.tgz#2d2618d10bb566572b8d7aad5180d84257d70a99"
   integrity sha512-YycBxUb49UUhdNMU5aJ7z5Ej2XGmaIBL0x34vZ82fn3hGvD+bgrMrVDpatgz2f7YxUMJxMkbWxJZeAvDxVe7Vw==
-
-typescript@3.5.2:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.2.tgz#a09e1dc69bc9551cadf17dba10ee42cf55e5d56c"
-  integrity sha512-7KxJovlYhTX5RaRbUdkAXN1KUZ8PwWlTzQdHV6xNqvuFOs7+WBo10TQUqT19Q/Jz2hk5v9TQDIhyLhhJY4p5AA==
 
 uglify-js@3.4.x:
   version "3.4.10"
