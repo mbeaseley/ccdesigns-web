@@ -2137,10 +2137,10 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-ccdesign-components@^1.10.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.10.0.tgz#220ffea0bf3fb9e0df691a30f0e000f806c0bb55"
-  integrity sha512-HzSHFmohrIrhT20LjvxHtaycW9FDo/TbCSqXz/pJztN3V2k421tGmiYWykGl+RWJ8v2aQPw4Fpr+xDoOaCFhjQ==
+ccdesign-components@^1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.10.1.tgz#0958085b29e7ba2f36627d929953fe332987fe07"
+  integrity sha512-TnK2fW7+t0rM0fr7UHOJVaQ77pzL8plXRrnAApzR1TkuJQPo82vuMkZsjS9hm49Qt1pqB1Rvptd4YX9rPSqEzA==
   dependencies:
     "@polymer/polymer" "^3.3.0"
     lit-html "^1.1.2"
