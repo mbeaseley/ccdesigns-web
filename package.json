@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "test": "ng test",
     "pree2e": "webdriver-manager update --ignore_ssl",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "yarn:clear": "rm -rf $PWD/node_modules && rm $PWD/yarn.lock && yarn cache clean && yarn"
   },
   "private": true,
   "dependencies": {
@@ -51,5 +52,8 @@
     "ts-node": "~8.4.1",
     "tslint": "~5.20.0",
     "typescript": "3.4.5"
+  },
+  "resolutions": {
+    "**/**/serialize-javascript": ">=2.1.1" 
   }
 }
