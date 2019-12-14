@@ -2075,10 +2075,17 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
+<<<<<<< HEAD
 ccdesign-components@^1.11.2:
   version "1.11.2"
   resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.11.2.tgz#adeb1c5edcd12101747424c8fb0c5d2566f603ec"
   integrity sha512-NgRhLP8wrACmBDu78puhlow0G6IroDR4E6uNnlDawBAuhXkfLHrua6qJ5eaL5kIPmu+80rGe9g9W4IRIAZgJVg==
+=======
+ccdesign-components@^1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/ccdesign-components/-/ccdesign-components-1.10.1.tgz#0958085b29e7ba2f36627d929953fe332987fe07"
+  integrity sha512-TnK2fW7+t0rM0fr7UHOJVaQ77pzL8plXRrnAApzR1TkuJQPo82vuMkZsjS9hm49Qt1pqB1Rvptd4YX9rPSqEzA==
+>>>>>>> 00d6adb143ff08439d810538f57220def1658854
   dependencies:
     "@polymer/polymer" "^3.3.1"
     lit-html "^1.1.2"
