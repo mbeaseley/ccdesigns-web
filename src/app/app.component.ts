@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
       gtag('config', 'UA-149499053-1', {
         'page-path': event.urlAfterRedirects
       });
-    })
+    });
   }
 
   ngOnInit() {
