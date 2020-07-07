@@ -1,8 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
-import { Router } from '@angular/router';
-import { Location } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
