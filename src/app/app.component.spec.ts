@@ -1,9 +1,8 @@
-import { async, ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
-import { Title, Meta } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -13,12 +12,13 @@ import { FypProjectComponent } from './components/portfolio/portfolio-projects/f
 import { WebcomponentProjectComponent } from './components/portfolio/portfolio-projects/webcomponent-project/webcomponent-project.component';
 import { WebsiteProjectComponent } from './components/portfolio/portfolio-projects/website-project/website-project.component';
 import { routes } from './routes';
+import { TalktalkAzureComponent } from './components/portfolio/portfolio-projects/talktalk-azure/talktalk-azure.component';
+import { TalktalkComponentComponent } from './components/portfolio/portfolio-projects/talktalk-component/talktalk-component.component';
+import { TalktalkSalesComponent } from './components/portfolio/portfolio-projects/talktalk-sales/talktalk-sales.component';
 
 describe('AppComponent', () => {
   let component: AppComponent;
   let fixture: ComponentFixture<AppComponent>;
-  let location: Location;
-  let router: Router;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -29,9 +29,12 @@ describe('AppComponent', () => {
         PortfolioComponent,
         FypProjectComponent,
         WebcomponentProjectComponent,
-        WebsiteProjectComponent
+        WebsiteProjectComponent,
+        TalktalkAzureComponent,
+        TalktalkComponentComponent,
+        TalktalkSalesComponent,
       ],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
     });
 
     fixture = TestBed.createComponent(AppComponent);
@@ -41,83 +44,5 @@ describe('AppComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  });
-
-  describe('Router: App', () => {
-    beforeEach(() => {
-      router = TestBed.get(Router);
-      location = TestBed.get(Location);
-      router.initialNavigation();
-    });
-
-    it('fakeAsync works', fakeAsync(() => {
-      const promise = new Promise((resolve) => {
-        setTimeout(resolve, 10);
-      });
-      let done = false;
-      promise.then(() => (done = true));
-      tick(50);
-      expect(done).toBeTruthy();
-    }));
-
-    it('navigate to "" redirects to /', fakeAsync(() => {
-      router.navigate(['']);
-      tick();
-      expect(location.path()).toBe('/');
-    }));
-
-    it('navigate to "portfolio" takes you to /portfolio', fakeAsync(() => {
-      router.navigate(['portfolio']);
-      tick();
-      expect(location.path()).toBe('/portfolio');
-    }));
-
-    it('navigate to "fyp-project" takes you to /portfolio/fyp-project', fakeAsync(() => {
-      router.navigate(['portfolio/fyp-project']);
-      tick();
-      expect(location.path()).toBe('/portfolio/fyp-project');
-    }));
-
-    it('navigate to "website-project" takes you to /portfolio/website-project', fakeAsync(() => {
-      router.navigate(['portfolio/website-project']);
-      tick();
-      expect(location.path()).toBe('/portfolio/website-project');
-    }));
-
-    it('navigate to "webcomponent-project" takes you to /portfolio/webcomponent-project', fakeAsync(() => {
-      router.navigate(['portfolio/webcomponent-project']);
-      tick();
-      expect(location.path()).toBe('/portfolio/webcomponent-project');
-    }));
-
-    it('navigate to "contact" takes you to /contact', fakeAsync(() => {
-      router.navigate(['contact']);
-      tick();
-      expect(location.path()).toBe('/contact');
-    }));
-  });
-
-  describe('MetaData: App', () => {
-    let titleService: Title;
-    let metaService: Meta;
-
-    it('the page title should be correct', (() => {
-      titleService = TestBed.get(Title);
-      expect(titleService.getTitle()).toEqual('CCDesigns');
-    }));
-
-    it('should render meta tags correctly', () => {
-      metaService = TestBed.get(Meta);
-      expect(metaService.getTags('name').length > 0).toBeTruthy();
-      expect(metaService.getTags('name = "viewport"')).toBeTruthy();
-      expect(metaService.getTags('name = "description"')).toBeTruthy();
-      expect(metaService.getTags('name = "og:description"')).toBeTruthy();
-      expect(metaService.getTags('name = "author"')).toBeTruthy();
-      expect(metaService.getTags('name = "og:author"')).toBeTruthy();
-      expect(metaService.getTags('name = "og:image"')).toBeTruthy();
-      expect(metaService.getTags('name = "og:url"')).toBeTruthy();
-      expect(metaService.getTags('name = "twitter:card"')).toBeTruthy();
-      expect(metaService.getTags('name = "theme-color"')).toBeTruthy();
-    });
   });
 });
