@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 
-import { HomeComponent } from './components/home/home.component';
+import { PageComponent } from './components/page/page.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { FypProjectComponent } from './components/portfolio/portfolio-projects/fyp-project/fyp-project.component';
 import { WebsiteProjectComponent } from './components/portfolio/portfolio-projects/website-project/website-project.component';
@@ -13,38 +13,44 @@ import { WebcomponentProjectComponent } from './components/portfolio/portfolio-p
 export const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: PageComponent,
+    data: {
+      content: 'home',
+    },
   },
   {
     path: 'portfolio',
-    component: PortfolioComponent
+    component: PageComponent,
+    data: {
+      content: 'portfolio',
+    },
   },
   {
     path: 'portfolio/fyp-project',
-    component: FypProjectComponent
+    component: FypProjectComponent,
   },
   {
     path: 'portfolio/website-project',
-    component: WebsiteProjectComponent
+    component: WebsiteProjectComponent,
   },
   {
     path: 'portfolio/webcomponent-project',
-    component: WebcomponentProjectComponent
+    component: WebcomponentProjectComponent,
   },
   {
     path: 'portfolio/talktalk-azure',
-    component: TalktalkAzureComponent
+    component: TalktalkAzureComponent,
   },
   {
     path: 'portfolio/talktalk-component',
-    component: TalktalkComponentComponent
+    component: TalktalkComponentComponent,
   },
   {
     path: 'portfolio/talktalk-sales',
-    component: TalktalkSalesComponent
+    component: TalktalkSalesComponent,
   },
   {
     path: '**',
-    redirectTo: ''
-  }
+    redirectTo: '',
+  },
 ];

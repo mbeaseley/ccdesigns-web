@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
+import { PageComponent } from './components/page/page.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { FypProjectComponent } from './components/portfolio/portfolio-projects/fyp-project/fyp-project.component';
 import { WebsiteProjectComponent } from './components/portfolio/portfolio-projects/website-project/website-project.component';
@@ -12,33 +12,35 @@ import { TalktalkAzureComponent } from './components/portfolio/portfolio-project
 import { TalktalkComponentComponent } from './components/portfolio/portfolio-projects/talktalk-component/talktalk-component.component';
 import { TalktalkSalesComponent } from './components/portfolio/portfolio-projects/talktalk-sales/talktalk-sales.component';
 // tslint:disable-next-line
-import { WebcomponentProjectComponent } from "./components/portfolio/portfolio-projects/webcomponent-project/webcomponent-project.component";
+import { WebcomponentProjectComponent } from './components/portfolio/portfolio-projects/webcomponent-project/webcomponent-project.component';
 import { routes } from './routes';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    PageComponent,
     PortfolioComponent,
     FypProjectComponent,
     WebsiteProjectComponent,
     WebcomponentProjectComponent,
     TalktalkAzureComponent,
     TalktalkComponentComponent,
-    TalktalkSalesComponent
+    TalktalkSalesComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     ReactiveFormsModule,
+    HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: environment.production
-    })
+      enabled: environment.production,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}
