@@ -10,9 +10,6 @@ declare var gtag: any;
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  headerContent = `[ { id: 'home', name: 'Home', url: '/' }, { id: 'portfolio', name: 'Portfolio', url: '/portfolio'} ]`;
-  footerContent = `{ id: 'ccdesign footer', text: '© 2020 Copyright: Michael Beaseley', backgroundColor: 'dark-grey'}`;
-
   constructor(router: Router) {
     const navEndEvents = router.events.pipe(filter((event) => event instanceof NavigationEnd));
     navEndEvents.subscribe((event: NavigationEnd) => {
