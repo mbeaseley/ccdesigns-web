@@ -1,14 +1,9 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-talktalk-component',
-  templateUrl: './talktalk-component.component.html',
+  templateUrl: './talktalk-component.component.pug',
   styleUrls: ['./talktalk-component.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
-export class TalktalkComponentComponent implements OnInit {
-  constructor() { }
-
-  ngOnInit() { }
-
-}
+export class TalktalkComponentComponent {}

@@ -1,14 +1,9 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-talktalk-azure',
-  templateUrl: './talktalk-azure.component.html',
+  templateUrl: './talktalk-azure.component.pug',
   styleUrls: ['./talktalk-azure.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
-export class TalktalkAzureComponent implements OnInit {
-  constructor() { }
-
-  ngOnInit() { }
-
-}
+export class TalktalkAzureComponent {}
