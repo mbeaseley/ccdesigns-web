@@ -46,6 +46,12 @@ export class ContentModelService {
       }
     }
 
+    if (content['inner_html']) {
+      contentType.innerHtml = content.inner_html.map((r: any) => {
+        return this.contentTypeMapping(r);
+      });
+    }
+
     return contentType;
   }
 

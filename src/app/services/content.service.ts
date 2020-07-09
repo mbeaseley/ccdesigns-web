@@ -8,27 +8,41 @@ import { ContentType, CarouselContentType } from '../classes/contentType';
 export class ContentService {
   constructor(private contentModelService: ContentModelService) {}
 
-  convertToHTML(contentSlot: ContentType[]): string {
+  contentTypeMapping(contentSlot: ContentType[]): string[] {
     const carousel = (r: CarouselContentType) => {
       return `{ id: '${r.id}', image: '${r.image}', alt: '${r.alt}' }`;
     };
 
-    const content = contentSlot.map((c: ContentType) => {
+    return contentSlot.map((c: ContentType) => {
       let attributes = '';
+      let innerHtml: string;
+
       if (c?.attributes) {
         for (const [key, value] of Object.entries(c.attributes)) {
           let abstractData: string;
           if (typeof value !== 'string') {
-            abstractData = `[ ${carousel(value[0])}, ${carousel(value[1])}, ${carousel(
-              value[2],
-            )} ]`;
+            const data = [];
+            for (const v of value) {
+              data.push(carousel(v));
+            }
+            abstractData = JSON.stringify(data).replace(/"/g, ' ');
           }
           attributes += ` ${key}="${abstractData || String(value)}"`;
           abstractData = '';
         }
       }
-      return `<ccdesign-${c.contentType}${attributes}></ccdesign-${c.contentType}>`;
+
+      if (c?.innerHtml) {
+        innerHtml = String(this.contentTypeMapping(c.innerHtml)).replace(/>,</g, '><');
+      }
+
+      return `<ccdesign-${c.contentType}${attributes}>${innerHtml}</ccdesign-${c.contentType}>`;
     });
+  }
+
+  convertToHTML(contentSlot: ContentType[]): string {
+    console.log(contentSlot);
+    const content = this.contentTypeMapping(contentSlot);
 
     return String(content).replace(/>,</g, '><');
   }
