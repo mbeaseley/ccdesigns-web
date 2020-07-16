@@ -42,7 +42,7 @@
     "jest": "^26.1.0",
     "jest-preset-angular": "^8.2.1",
     "js-yaml": "^3.14.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "ts-node": "^8.10.2",
     "tslint": "~6.1.0",
     "typescript": "3.9.6"
