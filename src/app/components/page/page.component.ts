@@ -8,7 +8,7 @@ interface ContentSlots {
 }
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-page',
   templateUrl: './page.component.pug',
   styleUrls: ['./page.component.scss'],
   encapsulation: ViewEncapsulation.None,

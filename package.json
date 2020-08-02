@@ -26,7 +26,7 @@
     "@angular/pwa": "^0.1000.4",
     "@angular/router": "10.0.7",
     "@angular/service-worker": "10.0.7",
-    "ccdesign-components": "^2.0.1",
+    "ccdesign-components": "^2.0.3",
     "core-js": "^3.6.4",
     "ng-cli-pug-loader": "^0.2.2",
     "rxjs": "^6.6.0",
