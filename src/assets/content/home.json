@@ -30,7 +30,7 @@
     {
       "content_type": "copy",
       "attributes": {
-        "copy": "<h3>Experiences</h3><p>Currently, a Front end Developer at Bloom & Wild, working with the Angular site. Previously, a Software Development Engineer at TalkTalk. Experience use and developing with Content Management Systems(CMS) and the evolution of the Front end which includes maintaining the old legacy systems, AngularJS, Bower, Bamboo and AWS, and the modern solution which includes StencilJS, Angular (2 to 8), Docker, Azure. All development was done following git standards and Agile Principles, Scrum and Kanban with the pleasure of gaining 6 months of Scrum Master experience.</p>"
+        "copy": "<h3>Experiences</h3><p>Currently, a Front-end Developer at Bloom & Wild, working with the multi-regional and multilingual Angular site, intregating with multi API structures.  Previously, a Software Development Engineer at TalkTalk. Experience use and developing with Content Management Systems(CMS) and the evolution of the Front end which includes maintaining the old legacy systems, AngularJS, Bower, Bamboo and AWS, and the modern solution which includes StencilJS, Angular (2 to 10), Docker, Azure and AWS. Experience testing applications using Jest, puppeteer, cypress, protactor and karma. All development was done following git standards and Agile Principles, Scrum and Kanban with the pleasure of gaining 6 months of Scrum Master experience.</p>"
       }
     },
     {

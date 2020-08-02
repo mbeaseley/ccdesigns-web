@@ -1,5 +1,5 @@
-.page__body--left
+.page__body--left(id="{{contentPath}}-left")
   div(#leftContent slot="left-side")
 
-.page__body--right
+.page__body--right([ngClass]="{'side-image-slot': !contentSlot?.right}" id="{{contentPath}}-right")
   div(#rightContent slot="right-side")

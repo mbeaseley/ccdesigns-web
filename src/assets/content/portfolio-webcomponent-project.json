@@ -1,0 +1,56 @@
+{
+  "name": "portfolio-webcomponent-project",
+  "left_slot_content": [
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<h1>CCDesign Web Component Library</h1>"
+      }
+    },
+    {
+      "content_type": "separator",
+      "attributes": {}
+    },
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<p>This project is my second actual live project in production and my first live NPM package. Purpose of this componentlibrary was to improve performance and simplify my Angular 7 website. Easy area on ccdesign.me.uk is comprised of this Web Component Library,from the carsouel to the copy.</p></br><p>Summary of the project is as followed:</p><ul><li>This Web Component Library is written in StencilJS(v1+) and Typescript and tested with Jest.</li><li>As mentioned above, this library is actively being used on my Angular 7 website and included as a NPM package.</li><li>The components created include a header, footer, template, carousel, copy, icon, button, grid, image card, separator and lastly placeholder component.</li><li>Azure and Azure DevOps was used for the cloud computering platform to test the components before integration.The package is served in a Blob and accessed via the index page.</li><li>Continous Integration is set up based on creating an release on Github.</li><li>Azure DevOps, as well as the codebase, uses yarn to install dependencies and run a build for production.</li><li>Created the project in github following gitflow principles.</li></ul>"
+      }
+    },
+    {
+      "content_type": "separator",
+      "attributes": {}
+    },
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<p><b>Link to the codebase in github is <a href='https://github.com/mbeaseley/ccdesigns-components'>here</a></br>Link to Storybook is <a href='https://mbeaseley.github.io/ccdesigns-components/'>here</a></br>Link to the NPM Package is <a href='https://www.npmjs.com/package/ccdesign-components'>here</a></b></p>"
+      }
+    }
+  ],
+  "right_slot_content": [
+    {
+      "content_type": "carousel-new",
+      "attributes": {
+        "data": [
+          {
+            "id": "devops",
+            "image": "https://images.ctfassets.net/43i5e5k8e66i/2APnMw5cTIR8SW9P9IG4KV/346e44b0efad7b9ef001dfbf1080dcc7/devops-min.jpg",
+            "alt": "Azure DevOps Portal"
+          },
+          {
+            "id": "webComponentDevelopment",
+            "image": "https://images.ctfassets.net/43i5e5k8e66i/14XBxEXpeMfpTOD8QA3K11/b0b182ac58749fbf41376cf84b9cf433/50724731_2073867952678456_1602229664212844544_o-min.jpg",
+            "alt": "Development of Web Component Library"
+          },
+          {
+            "id": "webComponentMobile",
+            "image": "https://images.ctfassets.net/43i5e5k8e66i/O6LNOCHR0Y33rQzcQqFNc/77e395dea8ee554790526d19d39d4c0f/webcomponents_index-min.jpg",
+            "alt": "Web Component Library"
+          }
+        ],
+        "time-interval": "7500"
+      }
+    }
+  ]
+}

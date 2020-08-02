@@ -1,12 +1,48 @@
-@import "variables";
+@import 'variables';
 
-  h1,
-  h2 {
-    font-size: 79px;
-    margin-bottom: 0;
+.page__body {
+  &--left {
+    &#home-left {
+      h1,
+      h2 {
+        font-size: 79px;
+        margin-bottom: 0;
 
-    @media (max-width: $screen-md-max) { font-size: 68px; }
-    @media (max-width: $screen-sm-max) { font-size: 60px; }
-    @media (max-width: $screen-xs-min) { font-size: 50px; }
-    @media (max-height: $screen-height-xs) { font-size: 40px; }
+        @media (max-width: $screen-md-max) {
+          font-size: 68px;
+        }
+        @media (max-width: $screen-sm-max) {
+          font-size: 60px;
+        }
+        @media (max-width: $screen-xs-min) {
+          font-size: 50px;
+        }
+        @media (max-height: $screen-height-xs) {
+          font-size: 40px;
+        }
+      }
+    }
   }
+
+  &--right {
+    // background image hack
+    &.side-image-slot {
+      background-color: #181619;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    &#portfolio-talktalk-component-right {
+      background-image: url('https://images.ctfassets.net/43i5e5k8e66i/UiyKpDoyFRD6WnkohwvvL/edc56fb5e54b818c74c053881d98cd71/ttcomponent.svg');
+    }
+
+    &#portfolio-talktalk-azure-right {
+      background-image: url('https://images.ctfassets.net/43i5e5k8e66i/7crGb8DYVAnSbsiLerNcdI/9fea452752bec2aeff30766fd6601e78/azure-portfolio.svg');
+    }
+
+    &#portfolio-talktalk-sales-right {
+      background-image: url('https://images.ctfassets.net/43i5e5k8e66i/4fTXOTTZPjcgCR8GNTaw9b/154fb0046fde109fb2ddf13e34979c2f/ttsales.svg');
+    }
+  }
+}

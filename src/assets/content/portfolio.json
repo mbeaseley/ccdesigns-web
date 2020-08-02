@@ -69,6 +69,16 @@
           }
         }
       ]
+    },
+    {
+      "content_type": "separator",
+      "attributes": {}
+    },
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<p><b>To find all projects, please visit <a class='highlight' href='https://mbeaseley.github.io/'>https://mbeaseley.github.io/</a></b></p>"
+      }
     }
   ],
   "right_slot_content": [

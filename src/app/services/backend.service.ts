@@ -11,7 +11,7 @@ export class BackendService {
   constructor(private readonly http: HttpClient) {}
 
   public async get(url: string): Promise<any> {
-    const fullUrl = `${this.server}/${url}`;
+    const fullUrl = `${this.server}${url}`;
 
     try {
       return this.http.get(fullUrl).toPromise();

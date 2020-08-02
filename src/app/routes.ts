@@ -27,27 +27,45 @@ export const routes: Routes = [
   },
   {
     path: 'portfolio/fyp-project',
-    component: FypProjectComponent,
+    component: PageComponent,
+    data: {
+      content: 'portfolio-fyp-project',
+    },
   },
   {
     path: 'portfolio/website-project',
-    component: WebsiteProjectComponent,
+    component: PageComponent,
+    data: {
+      content: 'portfolio-website-project',
+    },
   },
   {
     path: 'portfolio/webcomponent-project',
-    component: WebcomponentProjectComponent,
+    component: PageComponent,
+    data: {
+      content: 'portfolio-webcomponent-project',
+    },
   },
   {
     path: 'portfolio/talktalk-azure',
-    component: TalktalkAzureComponent,
+    component: PageComponent,
+    data: {
+      content: 'portfolio-talktalk-azure',
+    },
   },
   {
     path: 'portfolio/talktalk-component',
-    component: TalktalkComponentComponent,
+    component: PageComponent,
+    data: {
+      content: 'portfolio-talktalk-component',
+    },
   },
   {
     path: 'portfolio/talktalk-sales',
-    component: TalktalkSalesComponent,
+    component: PageComponent,
+    data: {
+      content: 'portfolio-talktalk-sales',
+    },
   },
   {
     path: '**',

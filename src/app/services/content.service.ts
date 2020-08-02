@@ -36,14 +36,14 @@ export class ContentService {
         innerHtml = String(this.contentTypeMapping(c.innerHtml)).replace(/>,</g, '><');
       }
 
-      return `<ccdesign-${c.contentType}${attributes}>${innerHtml}</ccdesign-${c.contentType}>`;
+      return `<ccdesign-${c.contentType}${attributes}>${innerHtml || ''}</ccdesign-${
+        c.contentType
+      }>`;
     });
   }
 
   convertToHTML(contentSlot: ContentType[]): string {
-    console.log(contentSlot);
     const content = this.contentTypeMapping(contentSlot);
-
     return String(content).replace(/>,</g, '><');
   }
 

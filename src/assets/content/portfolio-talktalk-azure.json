@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-talktalk-azure",
+  "left_slot_content": [
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<h1>Talk Online Integration with Azure</h1>"
+      }
+    },
+    {
+      "content_type": "separator",
+      "attributes": {}
+    },
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<p>This project involved migrating current and new projects from AWS to Azure. This, in particalar, involved designing and building new pipelines and hosting solutionsfor the new Web Components and Micro Frontend Architecture.</p></br><p>Summary of the project is as followed:</p><ul><li>Learning how to use Azure and what was the difference between Azure and AWS.</li><li>Creating hosting solutions for new Architecture on Azure.</li><li>Creating new pipelines to push to least changes for the new Architecture.</li><li>Web Components and Micro Frontend Architecture used both yarn and docker (docker only in development environment on Micro Frontend) for its pipelines with the additional of azure powershell.</li></ul>"
+      }
+    }
+  ],
+  "right_slot_content": []
+}
