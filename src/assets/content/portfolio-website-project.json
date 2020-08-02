@@ -1,0 +1,56 @@
+{
+  "name": "portfolio-website-project",
+  "left_slot_content": [
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<h1>Personal Website Project</h1>"
+      }
+    },
+    {
+      "content_type": "separator",
+      "attributes": {}
+    },
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<p>This project is the first actual live project in production to be viewed. Purpose of my personal website is toact like a CV and a promotion for all further projects created by myself. This project has been through a evolution, using different libraries and packages.</p><p>Summary of the project is as followed:</p><ul><li>The site was initally created using Angular 6 with Bootstrap 4 but has evoluted to use Angular 7 with Iconic Web Components written in StencilJs.</li><li>Iconic Web Component Library are used as mentioned. Use this <a href='https://ccdesign.me.uk/portfolio/webcomponent-project'>link</a> for more information.</li><li>Content is supplied by Contentful (currently just assets).</li><li>Azure and Azure DevOps is the cloud computering platform used to put website into Production.</li><li>Continous Integration is set up based on any commit made in the master branch on git. </li><li>Azure DevOps, as well as the codebase, uses yarn to install dependencies and run a build for production.</li><li>Created the project in github following gitflow principles.</li><li>Website was designed with paper and digitaled via Axure RP.</li></ul>"
+      }
+    },
+    {
+      "content_type": "separator",
+      "attributes": {}
+    },
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<p><b>Link to the codebase in github is <a href='https://github.com/mbeaseley/ccdesigns-web'>here</a></b></p>"
+      }
+    }
+  ],
+  "right_slot_content": [
+    {
+      "content_type": "carousel-new",
+      "attributes": {
+        "data": [
+          {
+            "id": "logoDesign",
+            "image": "https://images.ctfassets.net/43i5e5k8e66i/3QV5A6g6Jai2uykcCK8Coy/6d9073683813fe60a83d1ff57a5bb550/ccdesign_logo_design-min.jpg",
+            "alt": "Logo Design of CCDesign.me.uk"
+          },
+          {
+            "id": "websiteDigitalPlan",
+            "image": "https://images.ctfassets.net/43i5e5k8e66i/3FmMgMOcOccuoM0M6ey2su/9d4291424715987fd17fb9570976598a/website_digital_plan-min.jpeg",
+            "alt": "CCDesign Website Digital Plan"
+          },
+          {
+            "id": "websitePic",
+            "image": "https://images.ctfassets.net/43i5e5k8e66i/4O1Qth30iI6uOgQy88eoEi/2bef6e2bc4619e569a5d9c4a145b10dc/website_pic-min.jpg",
+            "alt": "Image of website"
+          }
+        ],
+        "time-interval": "7500"
+      }
+    }
+  ]
+}

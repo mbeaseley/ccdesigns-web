@@ -1,0 +1,72 @@
+{
+  "name": "home",
+  "left_slot_content": [
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<h1>MY<br>NAME<br>IS:</h1><h2>MICHAEL<br>BEASELEY.</h2>"
+      }
+    },
+    {
+      "content_type": "separator",
+      "attributes": {}
+    },
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<p>Graduated with a 2:1 in Computer Science (Software Engineering) at Brunel University, aspiring to become a Full Stack Developer within the IT industry.</p>"
+      }
+    },
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<p>Ambitious, passionate and keen to learn, I always strive for success in whatever I do. I enjoy working both as part of a team, or individually using my own initiative. I always put 100% into all the activities I undertake, and am devoted when presented with demanding situations.</p>"
+      }
+    },
+    {
+      "content_type": "separator",
+      "attributes": {}
+    },
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<h3>Experiences</h3><p>Currently, a Front-end Developer at Bloom & Wild, working with the multi-regional and multilingual Angular site, intregating with multi API structures.  Previously, a Software Development Engineer at TalkTalk. Experience use and developing with Content Management Systems(CMS) and the evolution of the Front end which includes maintaining the old legacy systems, AngularJS, Bower, Bamboo and AWS, and the modern solution which includes StencilJS, Angular (2 to 10), Docker, Azure and AWS. Experience testing applications using Jest, puppeteer, cypress, protactor and karma. All development was done following git standards and Agile Principles, Scrum and Kanban with the pleasure of gaining 6 months of Scrum Master experience.</p>"
+      }
+    },
+    {
+      "content_type": "copy",
+      "attributes": {
+        "copy": "<p>Previously, a Retail Operative at Primark Chelmsford. Gaining Experience working in all departments from customer services to stock room, effectively adapting to each environment. Mainly with customer services, the role consisted of addressing the needs of clients, being able to use my initiative in any situation and keeping calm under pressure along with operating within a team.The skills required for successful completion of this job included being efficient whilst attentive, having patience and understanding and especially using good people skills. This experience has given me an excellent understanding of customer care and service, as well as being confident in communicating with a wide range of people.</p>"
+      }
+    },
+    {
+      "content_type": "separator",
+      "attributes": {}
+    }
+  ],
+  "right_slot_content": [
+    {
+      "content_type": "carousel-new",
+      "attributes": {
+        "data": [
+          {
+            "id": "profilePicture",
+            "image": "https://images.ctfassets.net/43i5e5k8e66i/3s2QTQy7ryM46G2ewIesO2/1043c4517ce8d6103d71be32d7c90ef2/profile_new-min.jpg",
+            "alt": "Image of Michael Beaseley"
+          },
+          {
+            "id": "profilePicture2",
+            "image": "https://images.ctfassets.net/43i5e5k8e66i/2tbgM7o5Wk6208QeuQM6o0/955924a78902a6df9df0bef78ae52b53/profile_pic-min.jpg",
+            "alt": "Image of Michael Beaseley(2)"
+          },
+          {
+            "id": "profilePicture3",
+            "image": "https://images.ctfassets.net/43i5e5k8e66i/57QD3oI2tiUMOmwqyOgI42/fb97e7fb8bafe8bab7641a23c16584f5/profile_station2-min.jpg",
+            "alt": "Image of Michael Beaseley(3)"
+          }
+        ],
+        "time-interval": "7500"
+      }
+    }
+  ]
+}
