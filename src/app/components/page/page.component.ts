@@ -29,7 +29,6 @@ export class PageComponent implements OnInit {
       const bodyElement = document.querySelector('body');
       bodyElement.setAttribute('location', this.contentPath);
     });
-
     // Content Fetched and placed on left and right slots on page template
     const [leftSlot, rightSlot] = await this.contentService.getContent(this.contentPath);
     this.contentSlot = {

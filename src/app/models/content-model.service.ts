@@ -9,7 +9,7 @@ import { ContentType, ContentTypeAttributes, CarouselContentType } from '../clas
 export class ContentModelService {
   constructor(private backendService: BackendService) {}
 
-  static fromPayload(res: any): any {
+  private fromPayload(res: any): any {
     const contentResponse = new Content();
     contentResponse.name = res.name;
     contentResponse.leftSlot = res.left_slot_content.map((r: any) => {
@@ -22,7 +22,7 @@ export class ContentModelService {
     return contentResponse;
   }
 
-  static contentTypeMapping(content: any): any {
+  private contentTypeMapping(content: any): any {
     let contentValue: any;
     const contentType = new ContentType();
     contentType.contentType = content.content_type;
@@ -57,6 +57,11 @@ export class ContentModelService {
 
   async getContent(contentName: string): Promise<Content> {
     const res = await this.backendService.get(`assets/content/${contentName}.json`);
-    return ContentModelService.fromPayload(res);
+
+    if (!res?.name) {
+      return undefined;
+    }
+
+    return this.fromPayload(res);
   }
 }
