@@ -10,13 +10,15 @@ export class BackendService {
 
   constructor(private readonly http: HttpClient) {}
 
+  /**
+   * Get request
+   * @param url
+   */
   public async get(url: string): Promise<any> {
     const fullUrl = `${this.server}${url}`;
-
-    try {
-      return this.http.get(fullUrl).toPromise();
-    } catch (error) {
-      console.error(error);
-    }
+    return this.http
+      .get(fullUrl)
+      .toPromise()
+      .catch((e: any) => console.error(e));
   }
 }

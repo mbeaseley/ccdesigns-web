@@ -3,8 +3,7 @@
  * @see https://github.com/danguilherme/ng-cli-pug-loader
  */
 const fs = require('fs');
-const commonCliConfig =
-  'node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/webpack-configs/common.js';
+const commonCliConfig = 'node_modules/@angular-devkit/build-angular/src/webpack/configs/common.js';
 const pugRules =
   ' { test: /.(pug|jade)$/, exclude: /.(include|partial).(pug|jade)$/, use: [ { loader: "apply-loader" }, { loader: "pug-loader" } ] }, { test: /.(include|partial).(pug|jade)$/, loader: "pug-loader" },';
 
@@ -33,7 +32,7 @@ fs.readFile(commonCliConfig, (err, data) => {
  * @see https://github.com/angular/angular-cli/issues/14534
  */
 const typescriptCliConfig =
-  'node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/webpack-configs/typescript.js';
+  'node_modules/@angular-devkit/build-angular/src/webpack/configs/typescript.js';
 
 fs.readFile(typescriptCliConfig, (err, data) => {
   if (err) {
